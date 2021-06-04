@@ -73,10 +73,10 @@
                         <li><a href="#">reviews</a></li>
                     </ul>
 
-                    <form class="nav-search" id="navSearch">
+                    <form class="nav-search" id="navSearch" autocomplete="off">
                         <div class="nav-search__field">
                             <button type="button" class="nav-search__btn">Search</button>
-                            <input type="text" placeholder="Search" id="navSearchInput">
+                            <input type="text" autocomplete="off" placeholder="Search" id="navSearchInput">
 
                             <div id="whenChange">
                                 <div class="nav-search__result-wrapper">
@@ -133,6 +133,19 @@
         <div class="nav-sub" id="navSub">
             <div class="container">
                 <div class="nav-sub__wrapper">
+
+                    <div class="nav-sub__mobile-nav">
+                        <a href="index.html" class="logo">
+                            <img src="img/logo.jpg" alt="Canada Srams Logo" width="189" height="60">
+                            Canada Sarms Home Page
+                        </a>
+
+                        <button type="button" class="btn-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                    
                     <div class="nav-sub__menu">
                         <ul class="nav-main__menu">
                             <li><a href="#buySarms" class="menu-dropdown">buy sarms</a></li>

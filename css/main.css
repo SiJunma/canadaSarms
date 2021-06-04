@@ -361,8 +361,9 @@ h2 {
   height: 30px;
   -webkit-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out; }
+  .nav-search #whenChange {
+    display: none; }
   .nav-search__result-wrapper {
-    display: none;
     height: 0;
     opacity: 0;
     font-size: 0;

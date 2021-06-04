@@ -84,6 +84,33 @@ h2 {
     z-index: 1;
     height: 125px;
 
+    .menu__burger-btn {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        background: transparent;
+        border: none;
+        margin-right: auto;
+        order: 0;
+
+        span {
+            width: 24px;
+            height: 3px;
+            background-color: #000;
+            border-radius: 30px;
+            display: block;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
     &-sup {
         background: #000;
         color: #fff;
@@ -143,9 +170,31 @@ h2 {
         background-color: #fff;
     
         &__wrapper {
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: flex-end;
+        }
+
+        .btn-user {
+            order: 3;
+            width: 32px;
+            height: 32px;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 30px;
+            display: none;
+
+            img {
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+            }
+        }
+
+        .user-popup {
+            display: none;
         }
     
         &__menu {
@@ -156,7 +205,7 @@ h2 {
             list-style: none;
             color: #000000;
             margin-left: auto;
-            margin-right: 10px;
+            margin-right: 215px;
             opacity: 1;
     
             li:not(:last-child) {
@@ -252,12 +301,14 @@ h2 {
                 flex-direction: column;
                 justify-content: flex-start;
                 align-items: flex-start;
+                margin-right: auto;
 
                 a {
                     font-weight: bold;
                     font-size: 14px;
                     padding: 0;
                     transition: font-size 0.3s ease;
+                    text-align: left;
 
                     &.current {
                         font-size: 18px;
@@ -348,6 +399,8 @@ h2 {
 }
 
 .nav-search {
+    position: absolute;
+    right: 25px;
     margin: 0 10px;
     display: flex;
     width: 200px;
@@ -376,6 +429,7 @@ h2 {
     &__result-suggestion {
         width: 50%;
         padding-right: 30px;
+        padding-bottom: 30px;
 
         .nav-search__result-title {
             margin-left: 30px;
@@ -394,7 +448,6 @@ h2 {
     &.search-open {
         width: 75%;
         transition: width 0.3s ease-in-out;
-        position: relative;
 
         .nav-search__field {
             padding: 0 17px;
@@ -402,7 +455,7 @@ h2 {
             height: auto;
             outline: none;
             border: 1px solid #000000;
-            box-shadow: 0px 0px 0px 0.5px #000000;
+            // box-shadow: 0px 0px 0px 0.5px #000000;
             position: absolute;
             left: 0;
             top: 0;
@@ -416,6 +469,7 @@ h2 {
             border-bottom-right-radius: 0;
             height: 44px;
             padding-left: 0;
+            background-position: right 1px center;
         }
 
         .nav-search__result-wrapper {
@@ -548,9 +602,8 @@ h2 {
     margin-left: 10px;
     position: relative;
 
-    &_value::after {
+    &_value {
         position: absolute;
-        content: '9+';
         display: block;
         width: 14px;    
         height: 14px;

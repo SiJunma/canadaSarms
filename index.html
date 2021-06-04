@@ -55,6 +55,12 @@
         <div class="nav-main">
             <div class="container">
                 <div class="nav-main__wrapper">
+                    <button type="button" class="menu__burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
                     <a href="index.html" class="logo">
                         <img src="img/logo.jpg" alt="Canada Srams Logo" width="189" height="60">
                         Canada Sarms Home Page
@@ -69,48 +75,52 @@
 
                     <form class="nav-search" id="navSearch">
                         <div class="nav-search__field">
+                            <button type="button" class="nav-search__btn">Search</button>
                             <input type="text" placeholder="Search" id="navSearchInput">
 
-                            <div class="nav-search__result-wrapper" id="whenEmpty">
-                                <ul>
-                                    <li><button type="button">Advanced Muscle Stack</button></li>
-                                    <li><button type="button">Get Shredded – Athlete Stack</button></li>
-                                    <li><button type="button">Total Transformation Stack</button></li>
-                                </ul>
-                            </div>
-
-                            <div class="nav-search__result-wrapper" id="whenChange">
-                                <div class="nav-search__result-suggestion">
-                                    <span class="nav-search__result-title">suggestions</span>
-                                    <ul>
-                                        <li><button type="button">Totol transformation srack</button></li>
-                                        <li><button type="button">Total Transformation Stack</button></li>
-                                    </ul>
-                                </div>
-
-                                <div class="nav-search__result-products">
-                                    <span class="nav-search__result-title">produnts</span>
-
-                                    <ul>
-                                        <li>
-                                            <div class="result-products__img">
-                                                <img src="img/shop-product3.jpg" alt="Total Transformation Stack">
-                                            </div>
-                                            <div class="result-products__text">
-                                                <span class="result-products__text-title">Total Transformation Stack</span>
-                                                <span class="result-products__text-price">$239 – $709</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-
+                            <div id="whenChange">
+                                <div class="nav-search__result-wrapper">
+                                    <div class="nav-search__result-suggestion">
+                                        <span class="nav-search__result-title">suggestions</span>
+                                        <ul>
+                                            <li><button type="button">Totol transformation srack</button></li>
+                                            <li><button type="button">Total Transformation Stack</button></li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="nav-search__result-products">
+                                        <span class="nav-search__result-title">produnts</span>
+    
+                                        <ul>
+                                            <li>
+                                                <div class="result-products__img">
+                                                    <img src="img/shop-product3.jpg" alt="Total Transformation Stack">
+                                                </div>
+                                                <div class="result-products__text">
+                                                    <span class="result-products__text-title">Total Transformation Stack</span>
+                                                    <span class="result-products__text-price">$239 – $709</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+    
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="nav-search__btn">Search</button>
                     </form>
+
+                    <a href="#" class="btn-user " id="navUser">
+                        <img src="img/user.svg" alt="User" width="24" height="24">
+                    </a>
+
+                    <ul class="user-popup">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">sign up</a></li>
+                    </ul>
                     
-                    <a href="#" class="btn-cart btn-cart_value" id="navCart">
+                    <a href="#" class="btn-cart " id="navCart">
                         <img src="img/cart.svg" alt="Cart" width="20" height="20">
+                        <span class="btn-cart_value">9+</span>
                     </a>
                 </div>
             </div>
@@ -677,6 +687,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+
 
     <script type="text/javascript">
         $(document).ready(function(){

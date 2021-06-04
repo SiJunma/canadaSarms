@@ -47,6 +47,11 @@ $( document ).ready(function() {
         });
     });
 
+    $('#navUser').on('click', (evt) => {
+        evt.preventDefault();
+        $('#userPopup').fadeToggle(300);
+    });
+
     function searchClose() {
         $('#navSearch').removeClass('search-open');
         $('#whenChange').css('display', 'none');

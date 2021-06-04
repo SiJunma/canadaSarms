@@ -307,7 +307,7 @@
   .footer__wrapper {
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    grid-template-areas: "touch touch touch touch" "track track track track" "quick quick quick quick" "shop shop shop shop" "join join join join" "checkout checkout checkout checkout" "copy copy copy copy"; }
+    grid-template-areas: "touch touch track track" "quick quick shop shop" "join join join join" "checkout checkout checkout checkout" "copy copy copy copy"; }
   .footer__item:nth-child(5) {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -333,17 +333,32 @@
 
   .nav-main .btn-user {
     right: 40px; }
+  .nav-main .popup-dropdown .popup-wrapper.popup-dropdown_user::before {
+    right: 32px; }
 
   .nav-search {
     left: 40px; } }
 @media screen and (max-width: 400px) {
-  .footer__item:nth-child(1),
-  .footer__item:nth-child(2),
-  .footer__item:nth-child(3),
-  .footer__item:nth-child(4) {
+  .footer__wrapper {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "touch touch touch touch" "track track track track" "quick quick quick quick" "shop shop shop shop" "join join join join" "checkout checkout checkout checkout" "copy copy copy copy"; }
+  .footer__item:nth-child(1), .footer__item:nth-child(2), .footer__item:nth-child(3), .footer__item:nth-child(4), .footer__item:nth-child(5) {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+  .footer__subscribe-form {
+    width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .footer__subscribe-form input {
+      width: 90%; }
+  .footer__checkout-img {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
   .footer__checkout-img img {
     width: 100%;
@@ -357,6 +372,8 @@
   .nav-main .btn-user {
     right: 35px; }
   .nav-main .logo {
-    margin-left: 8px; } }
+    margin-left: 8px; }
+  .nav-main .popup-dropdown .popup-wrapper.popup-dropdown_user::before {
+    right: 27px; } }
 
 /*# sourceMappingURL=media.css.map */

@@ -413,6 +413,10 @@ h2 {
             }
         }
 
+        &__mobile-nav {
+            display: none;
+        }
+
         &__title {
             color: #000000;
             text-transform: uppercase;
@@ -602,6 +606,10 @@ h2 {
                 ul li {
                     display: flex;
                     align-items: center;
+
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
                     
                     &::before {
                         display: none;

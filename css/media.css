@@ -281,6 +281,41 @@
       display: flex; }
     .nav-main__menu, .nav-sup {
       display: none; }
+    .nav-sub__wrapper {
+      position: relative; }
+      .nav-sub__wrapper.opened .nav-sub__mobile-nav {
+        height: 50px; }
+        .nav-sub__wrapper.opened .nav-sub__mobile-nav .logo {
+          display: none; }
+      .nav-sub__wrapper.opened .nav-sub__item.visible {
+        border: none;
+        padding-left: 0;
+        padding-top: 25px; }
+        .nav-sub__wrapper.opened .nav-sub__item.visible .nav-sub__list {
+          grid-template-columns: repeat(1, auto);
+          grid-template-rows: repeat(auto-fit, 30px);
+          height: calc(100vh - 137px);
+          overflow: scroll; }
+      .nav-sub__wrapper.opened .nav-sub__menu {
+        margin-bottom: 0;
+        padding-top: 0; }
+        .nav-sub__wrapper.opened .nav-sub__menu .nav-main__menu .menu-dropdown::after {
+          -webkit-box-ordinal-group: 0;
+              -ms-flex-order: -1;
+                  order: -1;
+          margin-left: 0;
+          margin-right: 10px;
+          -webkit-transform: rotate(90deg);
+                  transform: rotate(90deg); }
+      .nav-sub__wrapper.opened .nav-main__menu a {
+        display: none; }
+        .nav-sub__wrapper.opened .nav-main__menu a.current {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          position: absolute;
+          top: 8px;
+          left: 0; }
 
   .btn-cart {
     -webkit-box-ordinal-group: 5;

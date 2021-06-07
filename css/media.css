@@ -330,6 +330,9 @@
             display: none; }
         .nav-search.search-open .nav-search__result-wrapper .nav-search__result-products {
           display: none; }
+      .nav-search .nav-search__btn {
+        -webkit-transition: opacity 0.4s ease 0.3s;
+        transition: opacity 0.4s ease 0.3s; }
     .nav-main {
       padding-top: 12px;
       padding-bottom: 11px; }

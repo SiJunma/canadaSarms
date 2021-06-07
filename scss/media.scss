@@ -470,6 +470,11 @@
                     }
                 }
             }
+
+            .nav-search__btn {
+                transition: opacity 0.4s ease 0.3s;
+            }
+
         }
 
         &-main {

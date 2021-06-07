@@ -377,6 +377,10 @@
         height: 59px;
         position: fixed;
 
+        &-main__menu a:hover::before {
+            opacity: 0;
+        }
+
         .logo {
             height: 36px;
             width: 111px;
@@ -566,6 +570,10 @@
 
                 .nav-main__menu a {
                     display: none;
+
+                    &:hover::before {
+                        opacity: 0;
+                    }
 
                     &.current {
                         display: flex;

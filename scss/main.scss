@@ -478,6 +478,20 @@ h2 {
             }
         }
     }
+
+    &-search__field {
+        .logo {
+            display: none;
+        }
+
+        .btn-close {
+            height: 0;
+            width: 0;
+            opacity: 0;
+            transition: opacity 0.1s ease 0.5s;
+            z-index: -1;
+        }
+    }
 }
 
 .logo {

@@ -430,6 +430,15 @@ h2 {
         text-transform: uppercase;
         padding: 5px 0;
         display: block; }
+  .nav-search__field .logo {
+    display: none; }
+  .nav-search__field .btn-close {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.1s ease 0.5s;
+    transition: opacity 0.1s ease 0.5s;
+    z-index: -1; }
 
 .logo {
   display: block;

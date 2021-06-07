@@ -43,6 +43,7 @@ $( document ).ready(function() {
     $('.nav-search__btn').on('click', (evt) => {
         evt.preventDefault();
         searchOpen();
+        $('#navSearchInput').focus();
 
         $(document).on('click', (evt) => {
             let container = $('#navSearch');
@@ -78,9 +79,15 @@ $( document ).ready(function() {
         subMenuCloseDropdownMobile();
     });
 
+    $('.nav-search .btn-close').on('click', (evt) => {
+        evt.preventDefault();
+        searchClose();
+    });
+
     function searchClose() {
         $('#navSearch').removeClass('search-open');
         $('#whenChange').css('display', 'none');
+        $('.nav > .nav-main').removeClass('mobile-search-open');
         setTimeout(function() {
             $('.nav-main .nav-main__menu').removeClass('hiden');
         }, 400);
@@ -89,6 +96,7 @@ $( document ).ready(function() {
     function searchOpen() {
         $('#navSub').removeClass('visible');
         $('#navSearch').addClass('search-open');
+        $('.nav > .nav-main').addClass('mobile-search-open');
 
         $('.nav-main .nav-main__menu').addClass('hiden');
 

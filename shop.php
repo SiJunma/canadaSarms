@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php include('head.php'); ?>
+</head>
+<body>
+
+    <?php include('nav.php'); ?>
+
+    <header class="header-regular">
+        <div class="container">
+            <h3>buy sarms</h3>
+
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li> 
+                        <a href="#" class="current">Buy sarms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="bySarms-wrapper">
+                <aside class="shop-filter" id="shopFilter">
+                    <form>
+
+                        <div class="shop-filter__wrapper">
+
+                            <div class="shop-filter__item">
+                                <input type="text" class="shop-filter__search-input" placeholder="Search products" aria-label="Search Product">
+                            </div>
+        
+                            <div class="shop-filter__item">
+                                <span class="shop-filter__header">filter by price</span>
+        
+                                <div class="rangeslider">
+                                    <div class="rangeslider__values">
+                                        <span id="rangesliderMin"></span>
+                                        <span id="rangesliderMax"></span>
+                                    </div>
+                                    <div id="filterPriceRange"></div>
+                                </div>
+        
+                            </div>
+    
+                            <div class="shop-filter__item">
+                                <span class="shop-filter__header">product categories</span>
+                                <div class="shop-filter__categories">
+                                    
+                                    <fieldset>
+                                        <input class="custom-radio" name="category" value="all" type="radio" id="category1">
+                                        <label for="category1">ALL SARM STACKS</label>
+                                    </fieldset>
+                                        
+                                    <fieldset>
+                                        <input class="custom-radio" name="category" value="fatBurning" type="radio" id="category2">
+                                        <label for="category2">FAT BURNING STACKS</label>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input class="custom-radio" name="category" value="individual" type="radio" id="category3">
+                                        <label for="category3">INDIVIDUAL SARMS</label>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input class="custom-radio" name="category" value="muscleBuilding" type="radio" id="category4">
+                                        <label for="category4">MUSCLE BUILDING STACKS</label>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input class="custom-radio" name="category" value="postCycle" type="radio" id="category5">
+                                        <label for="category5">Post Cycle Therapy (PCT)</label>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input class="custom-radio" name="category" value="supplements" type="radio" id="category6">
+                                        <label for="category6">Supplements</label>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <input class="custom-radio" name="category" value="protein" type="radio" id="category7">
+                                        <label for="category7">Protein</label>
+                                    </fieldset>
+
+                                </div>
+    
+                            </div>
+
+                            <div class="shop-filter__item">
+                                <ul class="social-list">
+                                    <li>
+                                        <a href="#" class="social-list__link" aria-label="Facebook">
+                                            Facebook
+                                        </a>
+                                    </li>
+            
+                                    <li>
+                                        <a href="#" class="social-list__link" aria-label="Instagram">
+                                            Instagram
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </form>
+                </aside>
+    
+                <section class="shop shop_bySarms">
+                    <div class="container">
+                        <h2 hidden>shop</h2>
+
+                        <div class="shop__sorting-wrapper">
+                            <div class="select-box">
+                                <div class="select-box__current" tabindex="1">
+                                  <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
+                                    <p class="select-box__input-text">Default sorting</p>
+                                  </div>
+                                  <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="1" value="2" name="Ben"/>
+                                    <p class="select-box__input-text">Cheese</p>
+                                  </div>
+                                  <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="2" value="3" name="Ben"/>
+                                    <p class="select-box__input-text">Milk</p>
+                                  </div>
+                                  <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="3" value="4" name="Ben"/>
+                                    <p class="select-box__input-text">Honey</p>
+                                  </div>
+                                  <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="4" value="5" name="Ben"/>
+                                    <p class="select-box__input-text">Toast</p>
+                                  </div>
+                                  
+                                  
+                                </div>
+                                <ul class="select-box__list">
+                                  <li>
+                                    <label class="select-box__option" for="0" aria-hidden="aria-hidden">Default sorting</label>
+                                  </li>
+                                  <li>
+                                    <label class="select-box__option" for="1" aria-hidden="aria-hidden">Cheese</label>
+                                  </li>
+                                  <li>
+                                    <label class="select-box__option" for="2" aria-hidden="aria-hidden">Milk</label>
+                                  </li>
+                                  <li>
+                                    <label class="select-box__option" for="3" aria-hidden="aria-hidden">Honey</label>
+                                  </li>
+                                  <li>
+                                    <label class="select-box__option" for="4" aria-hidden="aria-hidden">Toast</label>
+                                  </li>
+                                </ul>
+                              </div>
+                        </div>
+
+                        <div class="shop__wrapper">
+                            <a class="shop-card">
+                                <img src="img/shop-product3.jpg" alt="Athlete Stack">
+                                <span class="shop-card__title">
+                                    Advanced Muscle Stack
+                                </span>
+                                <div class="shop-card__price-line">
+                                    <b class="shop-card__price-value">
+                                        $249 – $699
+                                    </b>
+        
+                                    <div class="star-rating">
+                                        <span class="star_full"></span>
+                                        <span class="star_full"></span>
+                                        <span class="star_full"></span>
+                                        <span class="star_half"></span>
+                                        <span class="star_empty"></span>
+                                    </div>
+                                </div>
+        
+                                <div class="shop-card__btn-line">
+                                    <button href="#" class="btn btn_line-black">view product</button>
+                                    <button href="#" class="btn btn_blue">add to cart</button>
+                                </div>
+                            </a>
+        
+                            <a class="shop-card">
+                                <img src="img/shop-product3.jpg" alt="Athlete Stack">
+                                <span class="shop-card__title">
+                                    Get Shredded – Athlete Stack
+                                </span>
+                                <div class="shop-card__price-line">
+                                    <b class="shop-card__price-value">
+                                        $249 – $729
+                                    </b>
+        
+                                    <div class="star-rating">
+                                        <span class="star_full"></span>
+                                        <span class="star_full"></span>
+                                        <span class="star_full"></span>
+                                        <span class="star_half"></span>
+                                        <span class="star_empty"></span>
+                                    </div>
+                                </div>
+        
+                                <div class="shop-card__btn-line">
+                                    <button href="#" class="btn btn_line-black">view product</button>
+                                    <button href="#" class="btn btn_blue added">add to cart</button>
+                                </div>
+                            </a>
+        
+                            <a class="shop-card">
+                                <img src="img/shop-product3.jpg" alt="Athlete Stack">
+                                <span class="shop-card__title">
+                                    Total Transformation Stack
+                                </span>
+                                <div class="shop-card__price-line">
+                                    <b class="shop-card__price-value">
+                                        $239 – $709
+                                    </b>
+        
+                                    <div class="star-rating">
+                                        <span class="star_full"></span>
+                                        <span class="star_full"></span>
+                                        <span class="star_full"></span>
+                                        <span class="star_half"></span>
+                                        <span class="star_empty"></span>
+                                    </div>
+                                </div>
+        
+                                <div class="shop-card__btn-line">
+                                    <button href="#" class="btn btn_line-black">view product</button>
+                                    <button href="#" class="btn btn_blue">add to cart</button>
+                                </div>
+                            </a>
+        
+                            <a class="shop-card">
+                                <img src="img/shop-product2.jpg" alt="Athlete Stack">
+                                <span class="shop-card__title">
+                                    Growth Stack
+                                </span>
+                                <div class="shop-card__price-line">
+                                    <b class="shop-card__price-value">
+                                        $169 – $489
+                                    </b>
+        
+                                    <div class="star-rating">
+                                        <span class="star_full"></span>
+                                        <span class="star_full"></span>
+                                        <span class="star_full"></span>
+                                        <span class="star_half"></span>
+                                        <span class="star_empty"></span>
+                                    </div>
+                                </div>
+        
+                                <div class="shop-card__btn-line">
+                                    <button href="#" class="btn btn_line-black">view product</button>
+                                    <button href="#" class="btn btn_blue">add to cart</button>
+                                </div>
+                            </a>
+        
+                            <a class="shop-card">
+                                <img src="img/shop-product2.jpg" alt="Athlete Stack">
+                                <span class="shop-card__title">
+                                    Fitness Stack
+                                </span>
+                                <div class="shop-card__price-line">
+                                    <b class="shop-card__price-value">
+                                        $149 – $429
+                                    </b>
+        
+                                    <div class="star-rating">
+                                        <span class="star_full"></span>
+                                        <span class="star_full"></span>
+                                        <span class="star_full"></span>
+                                        <span class="star_half"></span>
+                                        <span class="star_empty"></span>
+                                    </div>
+                                </div>
+        
+                                <div class="shop-card__btn-line">
+                                    <button href="#" class="btn btn_line-black">view product</button>
+                                    <button href="#" class="btn btn_blue">add to cart</button>
+                                </div>
+                            </a>
+        
+                            <a class="shop-card">
+                                <img src="img/shop-product2.jpg" alt="Athlete Stack">
+                                <span class="shop-card__title">
+                                    Beginner Stack
+                                </span>
+                                <div class="shop-card__price-line">
+                                    <b class="shop-card__price-value">
+                                        $169 – $489
+                                    </b>
+        
+                                    <div class="star-rating">
+                                        <span class="star_full"></span>
+                                        <span class="star_full"></span>
+                                        <span class="star_full"></span>
+                                        <span class="star_half"></span>
+                                        <span class="star_empty"></span>
+                                    </div>
+                                </div>
+        
+                                <div class="shop-card__btn-line">
+                                    <button href="#" class="btn btn_line-black">view product</button>
+                                    <button href="#" class="btn btn_blue">add to cart</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <?php include('footer.php'); ?>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/nouislider.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

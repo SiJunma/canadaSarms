@@ -161,8 +161,40 @@ $( document ).ready(function() {
 
 
 
+    //FOR PRICE RANGE FILTER
 
+    var slider = document.getElementById('filterPriceRange');
 
+    noUiSlider.create(slider, {
+        start: [0, 720],
+        connect: true,
+        step: 10,
+        range: {
+            'min': 0,
+            'max': 1200
+        },
+
+        format: {
+            // 'to' the formatted value. Receives a number.
+            to: function (value) {
+                return Math.round(value) + '$';
+            },
+            // 'from' the formatted value.
+            // Receives a string, should return a number.
+            from: function (value) {
+                return Number(Math.round(value));
+            }
+        }
+    });
+
+    var snapValues = [
+        document.getElementById('rangesliderMin'),
+        document.getElementById('rangesliderMax')
+    ];
+
+    slider.noUiSlider.on('update', function (values, handle) {
+        snapValues[handle].innerHTML = values[handle];
+    });
 
 
 });

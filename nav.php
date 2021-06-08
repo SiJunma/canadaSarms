@@ -252,7 +252,7 @@
                     <span class="nav-sub__title">product categories</span>
 
                     <ul class="nav-sub__list">
-                        <li><a href="#">ALL SARM STACKS</a>
+                        <li><a href="shop.php">ALL SARM STACKS</a>
                         <li><a href="#">FAT BURNING STACKS</a></li>
                         <li><a href="#">INDIVIDUAL SARMS</a></li>
                         <li><a href="#">MUSCLE BUILDING STACKS</a></li>

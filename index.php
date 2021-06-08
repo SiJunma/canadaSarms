@@ -15,7 +15,7 @@
                     <p class="sub-header">
                         #1 SOURCE OF HIGHEST QUALITY STACKS AND NATURAL SUPPLEMENTS
                     </p>
-                    <a href="#" class="btn">SEE PRODUCTS</a>
+                    <a href="shop.php" class="btn">SEE PRODUCTS</a>
                 </div>
     
                 <div class="header-main__product">

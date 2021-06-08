@@ -61,6 +61,14 @@ h2 {
     color: $title;
 }
 
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #353F52;
+}
+
 .btn {
     text-decoration: none;
     color: #FFFFFF;
@@ -79,9 +87,11 @@ h2 {
         color: #000000;
         background: #fff;
         border: 1px solid #000000;
+        transition: border-color 0.1s ease-in-out;
 
         &:hover {
             color: #000000;
+            border-color: transparent;
         }
     }
 
@@ -94,6 +104,26 @@ h2 {
     &.btn_blue {
         background: #359BD1;
         color: #FFFFFF;
+        border: none;
+
+        &.added {
+            background: #03A550;
+            &::after {
+                content: '';
+                display: block;
+                width: 10px;
+                height: 10px;
+                background-repeat: no-repeat;
+                background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.85356 0.47458C9.65831 0.279307 9.34175 0.279307 9.14645 0.47458L3.15614 6.46495L0.853564 4.16237C0.658311 3.9671 0.341748 3.96712 0.146455 4.16237C-0.0488184 4.35763 -0.0488184 4.67419 0.146455 4.86946L2.80259 7.52556C2.99778 7.72081 3.31458 7.72067 3.5097 7.52556L9.85356 1.18169C10.0488 0.986435 10.0488 0.669853 9.85356 0.47458Z' fill='white'/%3E%3C/svg%3E%0A");
+                background-size: contain;
+                background-position: center;
+                margin-left: 7px;
+            }
+
+            &:hover {
+                color: #FFFFFF;
+            }
+        }
     }
 
     &:hover {
@@ -732,6 +762,14 @@ h2 {
         border-radius: 50%;
         top: -3px;
         right: -9px;
+    }
+}
+
+.header-regular {
+    padding-top: 20px;
+
+    h3 {
+        text-align: center;
     }
 }
 
@@ -1586,3 +1624,415 @@ h2 {
     z-index: 1;
     display: none;
 }
+
+.breadcrumbs {
+    padding: 10px 0;
+    font-size: 14px;
+    margin-bottom: 50px;
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+
+        li {
+            display: flex;
+            align-items: center;
+
+            &:not(:last-child) {
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 13px;
+                    height: 12px;
+                    background-image: url("data:image/svg+xml,%3Csvg width='5' height='9' viewBox='0 0 5 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.327353 0.102709C0.18991 0.239871 0.189699 0.462445 0.326843 0.599906L3.97077 4.25141C4.10785 4.3885 4.10783 4.61152 3.97051 4.74885L0.326843 8.40009C0.189681 8.53754 0.18991 8.76011 0.327353 8.89729C0.464797 9.03444 0.687388 9.03421 0.824533 8.89678L4.46795 5.24579C4.6736 5.04011 4.77639 4.77002 4.77639 4.49989C4.77639 4.22993 4.67363 3.95991 4.4682 3.75449L0.824533 0.103219C0.687388 -0.0342069 0.464797 -0.0344358 0.327353 0.102709Z' fill='%2384888E'/%3E%3C/svg%3E%0A");
+                    background-repeat: no-repeat;
+                    background-position:center;
+                    background-size: contain;
+                    margin-left: 9px;
+                    margin-right: 7px;
+                }
+            }
+        }
+
+        a {
+            color: #000000;
+            font-weight: 500;
+            text-decoration: none;
+
+            &.current {
+                font-weight: normal;
+                color: #84888E;
+                cursor: default;
+            }
+        }
+    }
+}
+
+.shop-filter {
+    border-left: 4px solid #161A21;
+    border-right: 4px solid #161A21;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-right: 4em;
+    width: 35%;
+
+    &__search-input {
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 0 10px;
+        padding-right: 25px;
+        color: #000000;
+        font-size: 13px;
+        font-weight: normal;
+        height: 30px;
+        width: 100%;
+        outline: none;
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.8534 11.1474L8.44091 7.7349C9.10191 6.91842 9.4999 5.88092 9.4999 4.75094C9.4999 2.13196 7.36891 0.000976562 4.74994 0.000976562C2.13096 0.000976562 0 2.13194 0 4.75091C0 7.36989 2.13099 9.50088 4.74996 9.50088C5.87994 9.50088 6.91744 9.10289 7.73392 8.44189L11.1464 11.8544C11.2439 11.9519 11.3719 12.0009 11.4999 12.0009C11.6279 12.0009 11.7559 11.9519 11.8534 11.8544C12.0489 11.6589 12.0489 11.3429 11.8534 11.1474ZM4.74996 8.50088C2.68197 8.50088 0.999998 6.8189 0.999998 4.75091C0.999998 2.68293 2.68197 1.00095 4.74996 1.00095C6.81795 1.00095 8.49992 2.68293 8.49992 4.75091C8.49992 6.8189 6.81793 8.50088 4.74996 8.50088Z' fill='black'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-position: right 8px center;
+
+        &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            font-size: 10px;
+            opacity: 1; /* Firefox */
+          }
+          
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            font-size: 10px;
+          }
+          
+          &::-ms-input-placeholder { /* Microsoft Edge */
+            font-size: 10px;
+          }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+        padding-top: 20px;
+
+        .social-list a {
+            filter: invert(1);
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #353F5254;
+        }
+    }
+
+    &__header {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 16px;
+    }
+
+    &__categories {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -20px;
+    }
+}
+
+// Custom radio
+.custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    & + label {
+        font-weight: 500;
+        font-size: 11px;
+        color: #000000;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 0;
+
+        &:hover {
+           cursor: pointer;         
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            flex-shrink: 0;
+            flex-grow: 0;
+            border: 1px solid #000000;
+            border-radius: 50%;
+            margin-right: 0.5em;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% 50%;
+        }
+
+    }
+
+    &:not(:disabled):not(:checked) + label:hover::after {
+        border-color: #000000;
+        cursor: pointer;
+        box-shadow: 0px 0px 0px 1px #000;
+    }
+
+    &:checked + label {
+        font-weight: bold;
+    }
+
+    &:checked + label::after {
+        background-color: #000;
+        box-shadow: 0px 0px 0px 1px #000;
+        border: 2px solid #fff;
+    }
+
+}
+
+// Custom Range
+.rangeslider {
+    padding-bottom: 10px;
+
+    .noUi {
+        &-horizontal {
+            height: 4px;
+        }
+
+        &-target {
+            border: none;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(53, 63, 82, 0.3) 100%);
+            border-radius: 2px;
+            margin: 0 5px;
+        }
+
+        &-connect {
+            background: linear-gradient(180deg, #000000 0%, #353F52 100%);
+        }
+    
+        &-handle {
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            background: linear-gradient(145.49deg, #000000 12.96%, #353F52 82.78%);
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+            position: relative;
+            border: none;
+            top: -5px;
+            cursor: pointer;
+
+            &::after,
+            &::before {
+                display: none;
+            }
+
+            &::before {
+                width: 7px;
+                height: 7px;
+                background: linear-gradient(145.49deg, #C4C4C4 12.96%, #FFFFFF 82.78%);
+                box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+                border-radius: 50%;
+                display: block;
+                border: none;
+                position: absolute;
+                left: 3px;
+                top: 3px;
+            }
+        }
+    }
+
+    &__values {
+        font-weight: 600;
+        font-size: 10px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        color: #000000;
+
+        margin-bottom: 10px;
+    }
+}
+
+.shop_bySarms {
+    width: 100%;
+
+    .select-box {
+        width: 250px;
+    }
+
+    .shop-card {
+
+        &__price-value {
+            font-size: 18px;
+        }
+
+        img {
+            height: 220px;
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            font-size: 14px;
+        }
+
+        &__price-line {
+            margin-top: auto;
+            padding-top: 5px;
+        }
+
+        .star-rating {
+            cursor: pointer;
+
+            span {
+                width: 11px;
+                height: 11px;
+            }
+        }
+    }
+
+    .shop__wrapper {
+        justify-content: space-between; 
+        gap: 50px 30px;
+    }
+
+    .shop-card__btn-line .btn {
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+        filter: none;
+        height: 28px;
+
+        &.btn_line-black {
+            box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.1);
+
+            &:hover {
+                box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
+
+.bySarms-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+//Custom Select
+.select-box {
+    position: relative;
+    display: block;
+    height: 30px;
+    width: 100%;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 0 7px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: normal;
+    height: 30px;
+    
+    &__current {
+      position: relative;
+      cursor: pointer;
+      outline: none;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url("data:image/svg+xml,%3Csvg width='9' height='5' viewBox='0 0 9 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.88018 0.165219C8.72044 0.00548289 8.4614 0.00545559 8.30164 0.165247L4.50009 3.96687L0.698359 0.165219C0.538623 0.00548289 0.279586 0.00545559 0.119823 0.165247C-0.0399409 0.32501 -0.0399409 0.584019 0.119823 0.743783L4.21084 4.83469C4.28756 4.91141 4.3916 4.9545 4.50009 4.9545C4.60859 4.9545 4.71266 4.91138 4.78935 4.83466L8.88015 0.743756C9.03994 0.584019 9.03994 0.324983 8.88018 0.165219Z' fill='black'/%3E%3C/svg%3E%0A");
+            position: absolute;
+            right: 3px;
+            top: 11px;
+            transition: transform 0.2s ease;
+        }
+      
+      &:focus {
+        & + .select-box__list {
+          opacity: 1;
+  
+          // We have to set "animation-name: none;" to make the list visible (read below how it works)
+  
+          animation-name: none;
+          left: 0;
+          margin-top: 1px;
+          
+          .select-box__option {
+            cursor: pointer;
+          }
+        }
+        
+        &::after {
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+    }
+    
+    &__value {
+      display: flex;
+    }
+    
+    &__input {
+      display: none;
+      
+      &:checked + .select-box__input-text {
+        display: block;
+      }
+    }
+    
+    &__input-text {
+      display: none;
+      width: 100%;
+      margin: 0;
+      height: 28px;
+      padding: 4px 3px;
+      background-color: #fff;
+    }
+    
+    &__list {
+      position: absolute;
+      width: 100%;
+      padding: 0;
+      list-style: none;
+      opacity: 0;
+      
+      // We need to use animation with delay.
+      // Otherwise the click event will not have time to run on label, because this element disapears immediately when .select-box__current element loses the focus.
+      // This delay will not be noticed because we set "opacity" to "0".
+      // We also use "animation-fill-mode: forwards" to make the list stay hidden.
+      
+      animation-name: HideList;
+      animation-duration: 0.5s;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+      animation-timing-function: step-start;
+      box-shadow: 0 15px 30px -10px transparentize(#000, 0.9);
+    }
+    
+    &__option {
+      display: block;
+      padding: 15px;
+      background-color: #fff;
+      
+      &:hover,
+      &:focus {
+        color: #546c84;
+        background-color: #fbfbfb;
+      }
+    }
+  }
+  
+  @keyframes HideList {
+    from {
+      transform: scaleY(1);
+    }
+    to {
+      transform: scaleY(0);
+    }
+  }

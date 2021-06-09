@@ -152,11 +152,6 @@
     .header-main__offer .sub-header {
       font-size: 19px; }
 
-  .shop_mainPage .shop-card {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15px; }
   .shop_mainPage h2 {
     margin-bottom: 0px; }
 
@@ -288,10 +283,6 @@
       gap: 30px 0px; }
     .shop_bySarms .shop-card img {
       height: 180px; }
-    .shop_bySarms .shop-card:hover {
-      padding: 14px 24px 30px 24px;
-      left: -24px;
-      top: -14px; }
     .shop_bySarms .shop-card__title {
       font-size: 12px; }
 
@@ -665,8 +656,6 @@
       .shop_bySarms .shop__wrapper > li {
         padding-bottom: 40px;
         width: 100%; }
-        .shop_bySarms .shop__wrapper > li:not(:last-child) {
-          border-bottom: 1px solid #353F5254; }
     .shop_bySarms .shop-card__category-line li img {
       max-height: 35px;
       max-width: 35px; }
@@ -677,14 +666,7 @@
         display: -ms-flexbox;
         display: flex; }
       .shop_bySarms .shop-card img {
-        height: 100%; }
-      .shop_bySarms .shop-card:hover {
-        padding: 0;
-        -webkit-filter: none;
-                filter: none;
-        -webkit-transform: none;
-                transform: none;
-        position: static; } }
+        height: 100%; } }
 @media screen and (max-width: 400px) {
   .footer__wrapper {
     grid-template-columns: auto auto;

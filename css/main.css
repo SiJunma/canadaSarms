@@ -1687,16 +1687,32 @@ h3 {
   .shop_bySarms .select-box {
     width: 250px; }
   .shop_bySarms .shop-card {
-    -webkit-transition: background 0.2s ease, -webkit-filter 0.3s ease, -webkit-transform 0.2s ease;
-    transition: background 0.2s ease, -webkit-filter 0.3s ease, -webkit-transform 0.2s ease;
-    transition: background 0.2s ease, filter 0.3s ease, transform 0.2s ease;
-    transition: background 0.2s ease, filter 0.3s ease, transform 0.2s ease, -webkit-filter 0.3s ease, -webkit-transform 0.2s ease;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
     cursor: pointer;
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
+    .shop_bySarms .shop-card::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: calc(100% + 110px);
+      width: calc(100% + 60px);
+      background-color: #FFFFFF;
+      -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+              box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+      z-index: -1;
+      top: -29px;
+      left: -30px;
+      opacity: 0;
+      -webkit-transition: opacity 0.3s ease;
+      transition: opacity 0.3s ease; }
     .shop_bySarms .shop-card__category-line {
-      display: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
       padding: 0;
       list-style: none;
       margin: 0;
@@ -1707,7 +1723,12 @@ h3 {
       width: 100%;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      position: absolute;
+      bottom: -58px;
+      opacity: 0;
+      -webkit-transition: opacity 0.2s ease;
+      transition: opacity 0.2s ease; }
       .shop_bySarms .shop-card__category-line li {
         margin: 0 0.5em; }
         .shop_bySarms .shop-card__category-line li img {
@@ -1717,24 +1738,14 @@ h3 {
              object-fit: contain;
           margin-bottom: 0; }
     .shop_bySarms .shop-card:hover {
-      background-color: #FFFFFF;
-      -webkit-filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.12));
-              filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.12));
-      padding: 30px;
-      padding-bottom: 40px;
-      position: absolute;
-      left: -30px;
-      top: -30px;
-      -webkit-transform: translateY(-20px);
-              transform: translateY(-20px);
+      position: relative;
       z-index: 1;
-      width: 100%;
-      -webkit-box-sizing: content-box;
-              box-sizing: content-box; }
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px); }
+      .shop_bySarms .shop-card:hover::before {
+        opacity: 1; }
       .shop_bySarms .shop-card:hover .shop-card__category-line {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
+        opacity: 1; }
     .shop_bySarms .shop-card__price-value {
       font-size: 18px; }
     .shop_bySarms .shop-card img {
@@ -1745,7 +1756,7 @@ h3 {
     .shop_bySarms .shop-card__title {
       font-size: 14px; }
     .shop_bySarms .shop-card__price-line {
-      margin-top: auto;
+      margin-bottom: auto;
       padding-top: 5px; }
     .shop_bySarms .shop-card .star-rating {
       cursor: pointer; }
@@ -1756,15 +1767,12 @@ h3 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    gap: 50px 30px;
+    gap: 50px 60px;
     list-style: none;
     margin-left: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    grid-template-columns: 1fr 1fr 1fr; }
     .shop_bySarms .shop__wrapper > li {
-      position: relative;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
       -webkit-box-align: stretch;
           -ms-flex-align: stretch;
               align-items: stretch;

@@ -1882,13 +1882,28 @@ h3 {
     }
 
     .shop-card {
-        transition: background 0.2s ease, filter 0.3s ease, transform 0.2s ease;
-        transform: translateY(0);
+        transition: transform 0.2s ease;
         cursor: pointer;
         width: 100%;
+        height: 100%;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            height: calc(100% + 110px);
+            width: calc(100% + 60px);
+            background-color: #FFFFFF;
+            box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            top: -29px;
+            left: -30px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
 
         &__category-line {
-            display: none;
+            display: flex;
             padding: 0;
             list-style: none;
             margin: 0;
@@ -1896,6 +1911,11 @@ h3 {
             justify-content: center;
             width: 100%;
             align-items: center;
+
+            position: absolute;
+            bottom: -58px;
+            opacity: 0;
+            transition: opacity 0.2s ease;
 
             li {
                 margin: 0 0.5em;
@@ -1910,20 +1930,16 @@ h3 {
         }
     
         &:hover {
-            background-color: #FFFFFF;
-            filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.12));
-            padding: 30px;
-            padding-bottom: 40px;
-            position: absolute;
-            left: -30px;
-            top: -30px;
-            transform: translateY(-20px);
+            position: relative;
             z-index: 1;
-            width: 100%;
-            box-sizing: content-box;
+            transform: translateY(-20px);
+    
+            &::before {
+                opacity: 1;
+            }
     
             .shop-card__category-line {
-                display: flex;
+                opacity: 1;
             }
         }
 
@@ -1942,7 +1958,7 @@ h3 {
         }
 
         &__price-line {
-            margin-top: auto;
+            margin-bottom: auto;
             padding-top: 5px;
         }
 
@@ -1958,14 +1974,13 @@ h3 {
 
     .shop__wrapper {
         justify-content: space-between; 
-        gap: 50px 30px;
+        gap: 50px 60px;
         list-style: none;
         margin-left: 0;
         padding-left: 0;
+        grid-template-columns: 1fr 1fr 1fr;
 
         & > li {
-            position: relative;
-            display: flex;
             align-items: stretch;
             margin: 0 auto;
             width: 100%;
@@ -2111,3 +2126,6 @@ h3 {
       transform: scaleY(0);
     }
   }
+
+
+

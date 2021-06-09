@@ -60,7 +60,7 @@ $( document ).ready(function() {
         $(document).on('click', (evt) => {
             let container = $('#userPopup');
             let container2 = $('#navUser');
-            if(container.has(evt.target).length === 0 & container2.has(evt.target).length === 0) {
+            if(container.has(evt.target).length === 0 && container2.has(evt.target).length === 0) {
                 $('#userPopup').fadeOut(300);
             }
         });
@@ -91,7 +91,7 @@ $( document ).ready(function() {
         $(document).on('click', (evt) => {
             let container = $('#cartPopup');
             let container2 = $('#navCart');
-            if(container.has(evt.target).length === 0 & container2.has(evt.target).length === 0) {
+            if(container.has(evt.target).length === 0 && container2.has(evt.target).length === 0) {
                 $('#cartPopup').fadeOut(300);
             }
         });
@@ -102,6 +102,27 @@ $( document ).ready(function() {
     $('#shopFilterMobileBtn').on('click', (evt) => {
         evt.preventDefault();
         $('#shopFilter').fadeToggle(300);
+    });
+
+    $('#btnLogin').on('click', (evt) => {
+        evt.preventDefault();
+        $('#loginPopup').fadeToggle(300);
+    });
+
+    $('#btnLogin2').on('click', (evt) => {
+        evt.preventDefault();
+        $('#userPopup').fadeOut(300);
+        $('#loginPopup').fadeIn(300);
+    });
+
+    $(document).on('click', (evt) => {
+        let container = $('#btnLogin')[0];
+        let container2 = $('#loginPopup');
+        let container3 = $('#btnLogin2')[0];
+        
+        if(container !== evt.target && container2.has(evt.target).length === 0 && container3 !== evt.target) {
+            $('#loginPopup').fadeOut(300);
+        }
     });
 
     function searchClose() {

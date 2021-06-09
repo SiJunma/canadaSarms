@@ -612,7 +612,10 @@
     margin-top: 20px; }
     .shop__sorting-wrapper .select-box {
       width: 100%;
-      max-width: 360px; } }
+      max-width: 360px; }
+
+  .popup-dropdown_login {
+    top: 50px; } }
 @media screen and (max-width: 576px) {
   .shop__wrapper {
     grid-template-columns: 1fr; }
@@ -736,6 +739,9 @@
     right: 27px; }
 
   .noUi-horizontal .noUi-handle {
-    right: -74%; } }
+    right: -74%; }
+
+  .popup-dropdown_login {
+    width: 100%; } }
 
 /*# sourceMappingURL=media.css.map */

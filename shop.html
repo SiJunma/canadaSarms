@@ -45,9 +45,9 @@
         
                     <div class="nav-sup__user-menu">
                         <ul>
-                            <li><a href="#" id="btnAccount">MY ACCOUNT</a></li>
-                            <li><a href="#" id="btnLogin" style="display: none;">log in</a></li>
-                            <li><a href="#" id="btnSignup" style="display: none;">sign up</a></li>
+                            <li style="display: none;"><a href="#" id="btnAccount">MY ACCOUNT</a></li>
+                            <li><a href="#" id="btnLogin">log in</a></li>
+                            <li><a href="#" id="btnSignup">sign up</a></li>
                         </ul>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                     <div id="userPopup" class="popup-dropdown">
                         <div class="popup-wrapper popup-dropdown_user">
                             <ul class="user-popup">
-                                <li><a href="#">Login</a></li>
+                                <li><a href="#" id="btnLogin2">Login</a></li>
                                 <li><a href="#">sign up</a></li>
                             </ul>
                         </div>
@@ -252,6 +252,32 @@
                                     <a href="#" class="btn btn_blue">Cart</a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+    
+                    <div id="loginPopup" class="popup-dropdown_login">
+                        <div class="popup-wrapper">
+                            <p class="popup-dropdown_login__header">Login</p>
+                            <form class="popup-dropdown_login__form">
+                                <fieldset>
+                                    <label for="userLoginInput" class="popup-dropdown_login__label">USERNAME OR EMAIL ADDRESS</label>
+                                    <input type="text" id="userLoginInput" name="Login" class="popup-dropdown_login__input">
+                                </fieldset>
+    
+                                <fieldset>
+                                    <label for="userpassInput" class="popup-dropdown_login__label">PASSWORD </label>
+                                    <input type="password" id="userpassInput" name="Password" class="popup-dropdown_login__input">
+                                </fieldset>
+    
+                                <fieldset>
+                                    <input class="custom-checkbox" name="rememberMe" value="rememberMe" type="checkbox" id="rememberMe">
+                                    <label for="rememberMe">Remember me</label>
+                                </fieldset>
+    
+                                <button class="btn" type="submit">Log In</button>
+                            </form>
+    
+                            <a class="link-blue" href="#">Lost your password?</a>
                         </div>
                     </div>
                 </div>
@@ -359,6 +385,7 @@
         </div>
     
     </nav>
+        
         
     
 <header class="header-regular">

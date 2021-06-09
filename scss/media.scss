@@ -849,6 +849,10 @@
             max-width: 360px;
         }
     }
+
+    .popup-dropdown_login {
+        top: 50px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1021,7 +1025,7 @@
             ul li:not(:last-child) {
                 margin-bottom: 15px;
             }
-            
+
             .result-products__img {
                 width: 100%;
                 margin-right: 16px;
@@ -1060,5 +1064,9 @@
 
     .noUi-horizontal .noUi-handle {
         right: -74%;
+    }
+
+    .popup-dropdown_login {
+        width: 100%;
     }
 }

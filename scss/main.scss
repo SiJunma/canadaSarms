@@ -644,7 +644,7 @@ h3 {
             }
 
             .nav-search__result-products {
-                width: 50%;
+                width: 100%;
                 padding-bottom: 30px;
 
                 ul li {
@@ -661,8 +661,9 @@ h3 {
                 }
 
                 .result-products__img {
-                    width: 30%;
+                    width: 100%;
                     margin-right: 25px;
+                    max-width: 100px;
 
                     img {
                         width: 100%;
@@ -1886,6 +1887,7 @@ h3 {
         cursor: pointer;
         width: 100%;
         height: 100%;
+        position: relative;
 
         &::before {
             content: '';
@@ -1930,7 +1932,6 @@ h3 {
         }
     
         &:hover {
-            position: relative;
             z-index: 1;
             transform: translateY(-20px);
     

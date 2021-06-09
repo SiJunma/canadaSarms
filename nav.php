@@ -58,13 +58,13 @@
 
                         <div id="whenChange">
                             <div class="nav-search__result-wrapper">
-                                <div class="nav-search__result-suggestion">
+                                <!-- <div class="nav-search__result-suggestion">
                                     <span class="nav-search__result-title">suggestions</span>
                                     <ul>
                                         <li><button type="button">Totol transformation srack</button></li>
                                         <li><button type="button">Total Transformation Stack</button></li>
                                     </ul>
-                                </div>
+                                </div> -->
 
                                 <div class="nav-search__result-products">
                                     <span class="nav-search__result-title">produnts</span>

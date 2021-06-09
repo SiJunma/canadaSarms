@@ -196,6 +196,39 @@
                                     </ul>
                                 </a>
                             </li>
+
+                            <li>
+                                <a class="shop-card">
+                                    <img src="img/shop-product3.jpg" alt="Athlete Stack">
+                                    <span class="shop-card__title">
+                                        Advanced Muscle Stack
+                                    </span>
+                                    <div class="shop-card__price-line">
+                                        <b class="shop-card__price-value">
+                                            $249
+                                        </b>
+            
+                                        <div class="star-rating">
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_half"></span>
+                                            <span class="star_empty"></span>
+                                        </div>
+                                    </div>
+            
+                                    <div class="shop-card__btn-line">
+                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <button href="#" class="btn btn_blue">add to cart</button>
+                                    </div>
+
+                                    <ul class="shop-card__category-line">
+                                        <li hidden><img src="img/product-muscle.svg" alt="FAT BURNING STACKS" width="40" height="40"></li>
+                                        <li hidden><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
+                                        <li><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
+                                    </ul>
+                                </a>
+                            </li>
         
                             <li>
                                 <a class="shop-card">

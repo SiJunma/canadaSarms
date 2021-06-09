@@ -27,6 +27,8 @@
     <main>
         <div class="container">
             <div class="bySarms-wrapper">
+                <button type="button" class="shop-filter__mobile-btn" id="shopFilterMobileBtn">filter</button>
+
                 <aside class="shop-filter" id="shopFilter">
                     <form>
 
@@ -113,30 +115,29 @@
                 </aside>
     
                 <section class="shop shop_bySarms">
-                    <div class="container">
-                        <h2 hidden>shop</h2>
+                    <h2 hidden>shop</h2>
 
                         <div class="shop__sorting-wrapper">
                             <div class="select-box">
                                 <div class="select-box__current" tabindex="1">
                                   <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
+                                    <input class="select-box__input" type="radio" id="0" value="1" name="sorting" checked="checked" value="Default sorting">
                                     <p class="select-box__input-text">Default sorting</p>
                                   </div>
                                   <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="1" value="2" name="Ben"/>
+                                    <input class="select-box__input" type="radio" id="1" value="2" name="sorting"/>
                                     <p class="select-box__input-text">Cheese</p>
                                   </div>
                                   <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="2" value="3" name="Ben"/>
+                                    <input class="select-box__input" type="radio" id="2" value="3" name="sorting"/>
                                     <p class="select-box__input-text">Milk</p>
                                   </div>
                                   <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="3" value="4" name="Ben"/>
+                                    <input class="select-box__input" type="radio" id="3" value="4" name="sorting"/>
                                     <p class="select-box__input-text">Honey</p>
                                   </div>
                                   <div class="select-box__value">
-                                    <input class="select-box__input" type="radio" id="4" value="5" name="Ben"/>
+                                    <input class="select-box__input" type="radio" id="4" value="5" name="sorting"/>
                                     <p class="select-box__input-text">Toast</p>
                                   </div>
                                   
@@ -162,158 +163,202 @@
                               </div>
                         </div>
 
-                        <div class="shop__wrapper">
-                            <a class="shop-card">
-                                <img src="img/shop-product3.jpg" alt="Athlete Stack">
-                                <span class="shop-card__title">
-                                    Advanced Muscle Stack
-                                </span>
-                                <div class="shop-card__price-line">
-                                    <b class="shop-card__price-value">
-                                        $249 – $699
-                                    </b>
-        
-                                    <div class="star-rating">
-                                        <span class="star_full"></span>
-                                        <span class="star_full"></span>
-                                        <span class="star_full"></span>
-                                        <span class="star_half"></span>
-                                        <span class="star_empty"></span>
+                        <ul class="shop__wrapper">
+                            <li>
+                                <a class="shop-card">
+                                    <img src="img/shop-product3.jpg" alt="Athlete Stack">
+                                    <span class="shop-card__title">
+                                        Advanced Muscle Stack
+                                    </span>
+                                    <div class="shop-card__price-line">
+                                        <b class="shop-card__price-value">
+                                            $249
+                                        </b>
+            
+                                        <div class="star-rating">
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_half"></span>
+                                            <span class="star_empty"></span>
+                                        </div>
                                     </div>
-                                </div>
-        
-                                <div class="shop-card__btn-line">
-                                    <button href="#" class="btn btn_line-black">view product</button>
-                                    <button href="#" class="btn btn_blue">add to cart</button>
-                                </div>
-                            </a>
-        
-                            <a class="shop-card">
-                                <img src="img/shop-product3.jpg" alt="Athlete Stack">
-                                <span class="shop-card__title">
-                                    Get Shredded – Athlete Stack
-                                </span>
-                                <div class="shop-card__price-line">
-                                    <b class="shop-card__price-value">
-                                        $249 – $729
-                                    </b>
-        
-                                    <div class="star-rating">
-                                        <span class="star_full"></span>
-                                        <span class="star_full"></span>
-                                        <span class="star_full"></span>
-                                        <span class="star_half"></span>
-                                        <span class="star_empty"></span>
+            
+                                    <div class="shop-card__btn-line">
+                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <button href="#" class="btn btn_blue">add to cart</button>
                                     </div>
-                                </div>
+
+                                    <ul class="shop-card__category-line">
+                                        <li hidden><img src="img/product-muscle.svg" alt="FAT BURNING STACKS" width="40" height="40"></li>
+                                        <li hidden><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
+                                        <li><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
+                                    </ul>
+                                </a>
+                            </li>
         
-                                <div class="shop-card__btn-line">
-                                    <button href="#" class="btn btn_line-black">view product</button>
-                                    <button href="#" class="btn btn_blue added">add to cart</button>
-                                </div>
-                            </a>
-        
-                            <a class="shop-card">
-                                <img src="img/shop-product3.jpg" alt="Athlete Stack">
-                                <span class="shop-card__title">
-                                    Total Transformation Stack
-                                </span>
-                                <div class="shop-card__price-line">
-                                    <b class="shop-card__price-value">
-                                        $239 – $709
-                                    </b>
-        
-                                    <div class="star-rating">
-                                        <span class="star_full"></span>
-                                        <span class="star_full"></span>
-                                        <span class="star_full"></span>
-                                        <span class="star_half"></span>
-                                        <span class="star_empty"></span>
+                            <li>
+                                <a class="shop-card">
+                                    <img src="img/shop-product3.jpg" alt="Athlete Stack">
+                                    <span class="shop-card__title">
+                                        Get Shredded – Athlete Stack
+                                    </span>
+                                    <div class="shop-card__price-line">
+                                        <b class="shop-card__price-value">
+                                            $249
+                                        </b>
+            
+                                        <div class="star-rating">
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_half"></span>
+                                            <span class="star_empty"></span>
+                                        </div>
                                     </div>
-                                </div>
-        
-                                <div class="shop-card__btn-line">
-                                    <button href="#" class="btn btn_line-black">view product</button>
-                                    <button href="#" class="btn btn_blue">add to cart</button>
-                                </div>
-                            </a>
-        
-                            <a class="shop-card">
-                                <img src="img/shop-product2.jpg" alt="Athlete Stack">
-                                <span class="shop-card__title">
-                                    Growth Stack
-                                </span>
-                                <div class="shop-card__price-line">
-                                    <b class="shop-card__price-value">
-                                        $169 – $489
-                                    </b>
-        
-                                    <div class="star-rating">
-                                        <span class="star_full"></span>
-                                        <span class="star_full"></span>
-                                        <span class="star_full"></span>
-                                        <span class="star_half"></span>
-                                        <span class="star_empty"></span>
+            
+                                    <div class="shop-card__btn-line">
+                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <button href="#" class="btn btn_blue added">Added</button>
                                     </div>
-                                </div>
+                                    <ul class="shop-card__category-line">
+                                        <li><img src="img/product-muscle.svg" alt="FAT BURNING STACKS" width="40" height="40"></li>
+                                        <li><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
+                                        <li><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
+                                    </ul>
+                                </a>
+                            </li>
         
-                                <div class="shop-card__btn-line">
-                                    <button href="#" class="btn btn_line-black">view product</button>
-                                    <button href="#" class="btn btn_blue">add to cart</button>
-                                </div>
-                            </a>
-        
-                            <a class="shop-card">
-                                <img src="img/shop-product2.jpg" alt="Athlete Stack">
-                                <span class="shop-card__title">
-                                    Fitness Stack
-                                </span>
-                                <div class="shop-card__price-line">
-                                    <b class="shop-card__price-value">
-                                        $149 – $429
-                                    </b>
-        
-                                    <div class="star-rating">
-                                        <span class="star_full"></span>
-                                        <span class="star_full"></span>
-                                        <span class="star_full"></span>
-                                        <span class="star_half"></span>
-                                        <span class="star_empty"></span>
+                            <li>
+                                <a class="shop-card">
+                                    <img src="img/shop-product3.jpg" alt="Athlete Stack">
+                                    <span class="shop-card__title">
+                                        Total Transformation Stack
+                                    </span>
+                                    <div class="shop-card__price-line">
+                                        <b class="shop-card__price-value">
+                                            $239
+                                        </b>
+            
+                                        <div class="star-rating">
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_half"></span>
+                                            <span class="star_empty"></span>
+                                        </div>
                                     </div>
-                                </div>
-        
-                                <div class="shop-card__btn-line">
-                                    <button href="#" class="btn btn_line-black">view product</button>
-                                    <button href="#" class="btn btn_blue">add to cart</button>
-                                </div>
-                            </a>
-        
-                            <a class="shop-card">
-                                <img src="img/shop-product2.jpg" alt="Athlete Stack">
-                                <span class="shop-card__title">
-                                    Beginner Stack
-                                </span>
-                                <div class="shop-card__price-line">
-                                    <b class="shop-card__price-value">
-                                        $169 – $489
-                                    </b>
-        
-                                    <div class="star-rating">
-                                        <span class="star_full"></span>
-                                        <span class="star_full"></span>
-                                        <span class="star_full"></span>
-                                        <span class="star_half"></span>
-                                        <span class="star_empty"></span>
+            
+                                    <div class="shop-card__btn-line">
+                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <button href="#" class="btn btn_blue">add to cart</button>
                                     </div>
-                                </div>
+    
+                                    <ul class="shop-card__category-line">
+                                        <li><img src="img/product-muscle.svg" alt="FAT BURNING STACKS" width="40" height="40"></li>
+                                        <li><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
+                                        <li><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
+                                    </ul>
+                                </a>
+                            </li>
         
-                                <div class="shop-card__btn-line">
-                                    <button href="#" class="btn btn_line-black">view product</button>
-                                    <button href="#" class="btn btn_blue">add to cart</button>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                            <li>
+                                <a class="shop-card">
+                                    <img src="img/shop-product2.jpg" alt="Athlete Stack">
+                                    <span class="shop-card__title">
+                                        Growth Stack
+                                    </span>
+                                    <div class="shop-card__price-line">
+                                        <b class="shop-card__price-value">
+                                            $169
+                                        </b>
+            
+                                        <div class="star-rating">
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_half"></span>
+                                            <span class="star_empty"></span>
+                                        </div>
+                                    </div>
+            
+                                    <div class="shop-card__btn-line">
+                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <button href="#" class="btn btn_blue">add to cart</button>
+                                    </div>
+
+                                    <ul class="shop-card__category-line">
+                                        <li><img src="img/product-muscle.svg" alt="FAT BURNING STACKS" width="40" height="40"></li>
+                                        <li><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
+                                        <li hidden><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
+                                    </ul>
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a class="shop-card">
+                                    <img src="img/shop-product2.jpg" alt="Athlete Stack">
+                                    <span class="shop-card__title">
+                                        Fitness Stack
+                                    </span>
+                                    <div class="shop-card__price-line">
+                                        <b class="shop-card__price-value">
+                                            $149
+                                        </b>
+            
+                                        <div class="star-rating">
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_half"></span>
+                                            <span class="star_empty"></span>
+                                        </div>
+                                    </div>
+            
+                                    <div class="shop-card__btn-line">
+                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <button href="#" class="btn btn_blue">add to cart</button>
+                                    </div>
+                                    <ul class="shop-card__category-line">
+                                        <li><img src="img/product-muscle.svg" alt="FAT BURNING STACKS" width="40" height="40"></li>
+                                        <li><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
+                                        <li><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
+                                    </ul>
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a class="shop-card">
+                                    <img src="img/shop-product2.jpg" alt="Athlete Stack">
+                                    <span class="shop-card__title">
+                                        Beginner Stack
+                                    </span>
+                                    <div class="shop-card__price-line">
+                                        <b class="shop-card__price-value">
+                                            $169
+                                        </b>
+            
+                                        <div class="star-rating">
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_full"></span>
+                                            <span class="star_half"></span>
+                                            <span class="star_empty"></span>
+                                        </div>
+                                    </div>
+            
+                                    <div class="shop-card__btn-line">
+                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <button href="#" class="btn btn_blue">add to cart</button>
+                                    </div>
+                                    <ul class="shop-card__category-line">
+                                        <li><img src="img/product-muscle.svg" alt="FAT BURNING STACKS" width="40" height="40"></li>
+                                        <li><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
+                                        <li><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
+                                    </ul>
+                                </a>
+                            </li>
+                        </ul>
                 </section>
             </div>
         </div>

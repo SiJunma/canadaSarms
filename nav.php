@@ -28,7 +28,7 @@
                     <span></span>
                 </button>
 
-                <a href="index.html" class="logo">
+                <a href="index.php" class="logo">
                     <img src="img/logo.jpg" alt="Canada Srams Logo" width="189" height="60">
                     Canada Sarms Home Page
                 </a>
@@ -43,7 +43,7 @@
                 <form class="nav-search" id="navSearch" autocomplete="off">
                     <div class="nav-search__field">
 
-                        <a href="index.html" class="logo">
+                        <a href="index.php" class="logo">
                             <img src="img/logo.jpg" alt="Canada Srams Logo" width="189" height="60">
                             Canada Sarms Home Page
                         </a>
@@ -228,7 +228,7 @@
             <div class="nav-sub__wrapper">
 
                 <div class="nav-sub__mobile-nav">
-                    <a href="index.html" class="logo">
+                    <a href="index.php" class="logo">
                         <img src="img/logo.jpg" alt="Canada Srams Logo" width="189" height="60">
                         Canada Sarms Home Page
                     </a>

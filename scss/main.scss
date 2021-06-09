@@ -1676,7 +1676,24 @@ h3 {
     padding-left: 17px;
     padding-right: 17px;
     margin-right: 4em;
-    width: 35%;
+    width: 350px;
+    flex-shrink: 0;
+
+    &__mobile-btn {
+        height: 41px;
+        width: 100%;
+        max-width: 360px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000000;
+        text-transform: capitalize;
+        background: #fff;
+        color: #000000;
+        font-weight: normal;
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
 
     &__search-input {
         border: 1px solid #000000;
@@ -1857,13 +1874,58 @@ h3 {
 }
 
 .shop_bySarms {
-    width: 100%;
+    width: 85%;
+    margin-bottom: 100px;
 
     .select-box {
         width: 250px;
     }
 
     .shop-card {
+        transition: background 0.2s ease, filter 0.3s ease, transform 0.2s ease;
+        transform: translateY(0);
+        cursor: pointer;
+        width: 100%;
+
+        &__category-line {
+            display: none;
+            padding: 0;
+            list-style: none;
+            margin: 0;
+            margin-top: 22px;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+
+            li {
+                margin: 0 0.5em;
+
+                img {
+                    max-height: 40px;
+                    max-width: 40px;
+                    object-fit: contain;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    
+        &:hover {
+            background-color: #FFFFFF;
+            filter: drop-shadow(0px 4px 30px rgba(0, 0, 0, 0.12));
+            padding: 30px;
+            padding-bottom: 40px;
+            position: absolute;
+            left: -30px;
+            top: -30px;
+            transform: translateY(-20px);
+            z-index: 1;
+            width: 100%;
+            box-sizing: content-box;
+    
+            .shop-card__category-line {
+                display: flex;
+            }
+        }
 
         &__price-value {
             font-size: 18px;
@@ -1872,6 +1934,7 @@ h3 {
         img {
             height: 220px;
             margin-bottom: 20px;
+            object-fit: contain;
         }
 
         &__title {
@@ -1896,6 +1959,17 @@ h3 {
     .shop__wrapper {
         justify-content: space-between; 
         gap: 50px 30px;
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+
+        & > li {
+            position: relative;
+            display: flex;
+            align-items: stretch;
+            margin: 0 auto;
+            width: 100%;
+        }
     }
 
     .shop-card__btn-line .btn {
@@ -1955,7 +2029,7 @@ h3 {
       
       &:focus {
         & + .select-box__list {
-          opacity: 1;
+          opacity: 2;
   
           // We have to set "animation-name: none;" to make the list visible (read below how it works)
   
@@ -2001,6 +2075,7 @@ h3 {
       padding: 0;
       list-style: none;
       opacity: 0;
+      z-index: 1;
       
       // We need to use animation with delay.
       // Otherwise the click event will not have time to run on label, because this element disapears immediately when .select-box__current element loses the focus.

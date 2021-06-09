@@ -99,6 +99,11 @@ $( document ).ready(function() {
         subMenuCloseDropdownMobile();
     });
 
+    $('#shopFilterMobileBtn').on('click', (evt) => {
+        evt.preventDefault();
+        $('#shopFilter').fadeToggle(300);
+    });
+
     function searchClose() {
         $('#navSearch').removeClass('search-open');
         $('#whenChange').css('display', 'none');

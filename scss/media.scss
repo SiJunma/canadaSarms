@@ -1,7 +1,16 @@
 @media screen and (max-height: 650px) and (max-width: 768px) {
     .cart-popup {
         height: calc(100vh - 100px);
-        overflow-y: scroll;
+
+        .cart-popup__price-btn {
+            width: calc(100% - 20px);
+            left: 10px;
+            bottom: 9px;
+        }
+
+        .cart-popup__list {
+            height: calc(100% - 44px);
+        }
     }
 }
 
@@ -253,6 +262,15 @@
 
         h2 {
             margin-bottom: 0px;
+        }
+
+        .shop-card {
+            width: 100%;
+            padding: 25px 20px 20px 20px;
+        }
+
+        .shop__wrapper {
+            gap: 10px 30px;
         }
     }
 
@@ -886,6 +904,10 @@
         right: 0px;
     }
 
+    .shop_mainPage .shop-card {
+        max-width: 330px;
+    }
+
     .shop_bySarms {
         padding: 0 15px;
 
@@ -893,6 +915,11 @@
             gap: 30px 35px;
             justify-content: center;
         }
+    }
+
+    .popup-feedback {
+        width: calc(100% - 70px);
+        max-width: 424px;
     }
 }
 
@@ -940,6 +967,12 @@
         }
     }
 
+    .popup-feedback {
+        width: calc(100% - 30px);
+        right: 15px;
+        bottom: 15px;
+        max-width: 424px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1038,6 +1071,16 @@
 
             .result-products__text-price {
                 font-size: 15px;
+            }
+        }
+    }
+
+    .popup-feedback {
+        .popup-feedback__body {
+            padding: 30px 20px;
+
+            h3 {
+                font-size: 21px;
             }
         }
     }

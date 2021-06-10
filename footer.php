@@ -72,3 +72,21 @@
         </div>
     </div>
 </footer>
+
+<div id="feedbackPopup" class="popup-feedback">
+    <div class="popup-wrapper">
+        <button type="button" class="btn-close">
+            <span></span>
+            <span></span>
+        </button>
+        <div class="popup-feedback__body">
+            <h3>Give your feedback</h3>
+
+            <form>
+                <textarea name="feedback" id="feedbackTextArea" cols="30" rows="5" value="Description..."></textarea>
+
+                <button type="submit" class="btn btn_line-black">Add Review</button>
+            </form>
+        </div>
+    </div>
+</div>

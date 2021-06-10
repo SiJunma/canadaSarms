@@ -209,6 +209,90 @@
                                         </div>
                                     </div>
                                 </li>
+
+                                <li>
+                                    <div class="cart-popup__product">
+                                        <div class="cart-popup__close-line">
+                                            <span class="cart-popup__head">Product</span>
+                
+                                            <button type="button" class="btn-close">
+                                                <span></span>
+                                                <span></span>
+                                            </button>
+                                        </div>
+                
+                                        <div class="cart-popup__product-line">
+                                            <div class="cart-popup__img">
+                                                <img src="img/shop-product3.jpg" alt="Advanced Muscle Stack - 30-day supply">
+                                            </div>
+                                            <div class="cart-popup__title">
+                                                Advanced Muscle Stack - 30-day supply
+                                            </div>
+                                        </div>
+                
+                                        <div class="cart-popup__qty-line">
+                                            <div class="cart-popup__price">
+                                                <span class="cart-popup__head">Price</span>
+                                                <p>$249</p>
+                                            </div>
+
+                                            <div class="cart-popup__qty">
+                                                <span class="cart-popup__head">QUANTITY</span>
+                                                <div class="quantity buttons_added">
+                                                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                                                </div>
+                                            </div>
+
+                                            <div class="cart-popup__subtotal">
+                                                <span class="cart-popup__head">SUBTOTAL</span>
+                                                <p>$249</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
+
+                                                                <li>
+                                    <div class="cart-popup__product">
+                                        <div class="cart-popup__close-line">
+                                            <span class="cart-popup__head">Product</span>
+                
+                                            <button type="button" class="btn-close">
+                                                <span></span>
+                                                <span></span>
+                                            </button>
+                                        </div>
+                
+                                        <div class="cart-popup__product-line">
+                                            <div class="cart-popup__img">
+                                                <img src="img/shop-product3.jpg" alt="Advanced Muscle Stack - 30-day supply">
+                                            </div>
+                                            <div class="cart-popup__title">
+                                                Advanced Muscle Stack - 30-day supply
+                                            </div>
+                                        </div>
+                
+                                        <div class="cart-popup__qty-line">
+                                            <div class="cart-popup__price">
+                                                <span class="cart-popup__head">Price</span>
+                                                <p>$249</p>
+                                            </div>
+
+                                            <div class="cart-popup__qty">
+                                                <span class="cart-popup__head">QUANTITY</span>
+                                                <div class="quantity buttons_added">
+                                                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                                                </div>
+                                            </div>
+
+                                            <div class="cart-popup__subtotal">
+                                                <span class="cart-popup__head">SUBTOTAL</span>
+                                                <p>$249</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                             <div class="cart-popup__price-btn">
                                 <div class="cart-popup__price-total">

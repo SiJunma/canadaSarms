@@ -125,6 +125,11 @@ $( document ).ready(function() {
         }
     });
 
+    $('#feedbackPopup .btn-close').on('click', (evt) => {
+        evt.preventDefault();
+        $('#feedbackPopup').fadeOut(300);
+    });
+
     function searchClose() {
         $('#navSearch').removeClass('search-open');
         $('#whenChange').css('display', 'none');

@@ -286,10 +286,10 @@
                     <div>
                         <div class="main-feedback__card">
                             <div class="main-feedback__av">
-                                <img src="img/av1.jpg" alt="John doe">
+                                <img src="img/av2.jpg" alt="John doe">
                             </div>
     
-                            <span class="main-feedback__title">John doe</span>
+                            <span class="main-feedback__title">Robert H.</span>
     
                             <div class="star-rating">
                                 <span class="star_full"></span>
@@ -403,51 +403,9 @@
     </main>
 
     <?php include('footer.php'); ?>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <script type="text/javascript">
     
-        $(document).ready(function(){
-          $('.main-feedback__slider').slick({
-            centerMode: true,
-            slidesToShow: 3,
-            arrows: false,
-            dots: true,
-            slidesToScroll: 3,
-            infinite: true,
-            swipeToSlide: true,
-            
-            responsive: [
-                {
-                breakpoint: 1400,
-                settings: {
-                    centerMode: false,
-                    slidesToShow: 3
-                }
-                },
-                {
-                breakpoint: 1200,
-                settings: {
-                    centerMode: false,
-                    slidesToShow: 2
-                }
-                },
-                {
-                breakpoint: 992,
-                settings: {
-                    centerMode: false,
-                    slidesToShow: 1
-                }
-                }
-            ]
+    <?php include('scripts.php'); ?>
 
-          });
-        });
-    </script>
-
-    <script src="js/main.js"></script>
 
 </body>
 </html>

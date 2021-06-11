@@ -73,7 +73,7 @@
     </div>
 </footer>
 
-<div id="feedbackPopup" class="popup-feedback">
+<div id="feedbackPopup" class="popup-feedback" style="display: block;">
     <div class="popup-wrapper">
         <button type="button" class="btn-close">
             <span></span>
@@ -83,7 +83,7 @@
             <h3>Give your feedback</h3>
 
             <form>
-                <textarea name="feedback" id="feedbackTextArea" cols="30" rows="5" value="Description..."></textarea>
+                <textarea name="feedback" id="feedbackTextArea" cols="30" rows="5" placeholder="Description..."></textarea>
 
                 <button type="submit" class="btn btn_line-black">Add Review</button>
             </form>

@@ -230,4 +230,48 @@ $( document ).ready(function() {
     }
 
 
+
+    //TABS
+    var tabItems = $('.cd-tabs-navigation a'),
+    tabContentWrapper = $('.cd-tabs-content');
+
+    tabItems.on('click', function(event){
+        event.preventDefault();
+        var selectedItem = $(this);
+        if( !selectedItem.hasClass('selected') ) {
+            var selectedTab = selectedItem.data('content'),
+                selectedContent = tabContentWrapper.find('li[data-content="'+selectedTab+'"]'),
+                slectedContentHeight = selectedContent.innerHeight();
+            
+            tabItems.removeClass('selected');
+            selectedItem.addClass('selected');
+            selectedContent.addClass('selected').siblings('li').removeClass('selected');
+            //animate tabContentWrapper height when content changes 
+            tabContentWrapper.animate({
+                'height': slectedContentHeight
+            }, 200);
+
+            setTimeout(() => {tabContentWrapper.css('height', 'auto')}, 300);
+        }
+    });
+
+
+
+    //ACCORDEON
+    var acc = document.getElementsByClassName("custom-accordion__btn");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+    }
+
 });

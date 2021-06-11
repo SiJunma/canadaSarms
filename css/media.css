@@ -44,7 +44,15 @@
       .shop_bySarms .shop__wrapper > li {
         width: 200px; }
     .shop_bySarms .shop-card img {
-      height: 200px; } }
+      height: 200px; }
+
+  .rangeslider .noUi-handle {
+    right: -17px; }
+
+  .product-page__img-section {
+    padding-left: 0; }
+  .product-page__wrapper {
+    grid-template-columns: 50% 13% 33%; } }
 @media screen and (max-width: 1200px) {
   .header-main {
     padding-top: 30px;
@@ -134,7 +142,18 @@
     .shop_bySarms .shop__wrapper > li {
       width: 100%; }
     .shop_bySarms .shop-card img {
-      height: 100%; } }
+      height: 100%; }
+
+  .product-page__wrapper {
+    grid-template-columns: 50% 15% auto; }
+  .product-page .slider-single__item {
+    width: 304px;
+    height: 304px; }
+  .product-page .slider-vertical__item {
+    width: 69px;
+    height: 69px; }
+  .product-page__slider-vertical .slick-slide:not(:last-child) {
+    margin-bottom: 7px; } }
 @media screen and (max-width: 992px) {
   body {
     padding-top: 105px; }
@@ -302,7 +321,24 @@
     padding-right: 11px; }
 
   .noUi-horizontal .noUi-handle {
-    right: -7px; } }
+    right: -9px; }
+
+  .product-page__wrapper {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "header header" "img img" "price btn" "delivery delivery" "qty qty" "triggers triggers"; }
+  .product-page__img-section {
+    padding-left: unset;
+    padding-right: unset;
+    margin-bottom: 30px; }
+  .product-page .slider-single__item {
+    width: 364px;
+    height: 364px; }
+  .product-page .slider-vertical__item {
+    width: 79px;
+    height: 79px; }
+  .product-page__slider-vertical .slick-slide:not(:last-child) {
+    margin-bottom: 14px; } }
 @media screen and (max-width: 768px) {
   .header-main__wrapper {
     -webkit-box-orient: vertical;
@@ -625,7 +661,14 @@
       max-width: 360px; }
 
   .popup-dropdown_login {
-    top: 50px; } }
+    top: 50px; }
+
+  .review-section__item {
+    padding: 18px 25px 15px 10px; }
+  .review-section__avatar {
+    margin-right: 20px; }
+  .review-section__form-line {
+    padding-left: 0; } }
 @media screen and (max-width: 576px) {
   .shop__wrapper {
     grid-template-columns: 1fr; }
@@ -660,7 +703,48 @@
 
   .popup-feedback {
     width: calc(100% - 70px);
-    max-width: 424px; } }
+    max-width: 424px; }
+
+  .product-page .slider-single__item {
+    width: calc(100vw - 132px);
+    height: 364px; }
+  .product-page__price-box {
+    margin-bottom: 10px; }
+  .product-page__btn-box {
+    padding-top: unset; }
+  .product-page__delivery-box {
+    margin-bottom: 25px; }
+  .product-page__qty-box {
+    margin-bottom: 40px; }
+  .product-page .product-page__triggers-box {
+    margin-top: 40px; }
+  .product-page__wrapper {
+    grid-template-areas: "header header" "img img" "price price"  "delivery delivery" "qty qty"  "btn btn" "triggers triggers";
+    grid-auto-flow: dense;
+    grid-template-rows: repeat(7, auto); }
+
+  .review-section__item {
+    grid-template-areas: "avatar data" "content content"; }
+  .review-section__date-line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .review-section__date-post {
+    margin-bottom: 10px;
+    margin-left: 4px; }
+  .review-section__avatar {
+    margin-right: 13px; }
+  .review-section__text-post {
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px; } }
 @media screen and (max-width: 464px) {
   .nav-search.search-open .nav-search__result-wrapper .nav-search__result-products .result-products__img {
     width: 100%;
@@ -694,7 +778,34 @@
     width: calc(100% - 30px);
     right: 15px;
     bottom: 15px;
-    max-width: 424px; } }
+    max-width: 424px; }
+
+  .product-page__img-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  .product-page__slider-single {
+    margin: 0; }
+  .product-page .slider-single__item {
+    width: calc(100vw - 30px);
+    height: calc(100vw - 30px); }
+  .product-page__slider-vertical {
+    width: 100%;
+    height: 80px;
+    margin-top: 20px; }
+    .product-page__slider-vertical .slick-slide:not(:last-child) {
+      margin-bottom: 0px;
+      margin-right: 2em; }
+  .product-page__qty-radios fieldset {
+    width: 50%; }
+  .product-page__btn-item {
+    width: 50%; }
+  .product-page__btn-box .btn {
+    width: 100%; }
+
+  .tabs-section {
+    margin-bottom: 70px; } }
 @media screen and (max-width: 400px) {
   .footer__wrapper {
     grid-template-columns: auto auto;
@@ -754,7 +865,49 @@
   .popup-feedback .popup-feedback__body {
     padding: 30px 20px; }
     .popup-feedback .popup-feedback__body h3 {
-      font-size: 21px; } }
+      font-size: 21px; }
+
+  .product-page__slider-vertical {
+    margin-top: 10px; }
+  .product-page__qty-box {
+    margin-bottom: 30px; }
+  .product-page__qty-radios fieldset {
+    width: 100%; }
+    .product-page__qty-radios fieldset label {
+      width: 90%; }
+      .product-page__qty-radios fieldset label::after {
+        margin-left: auto; }
+  .product-page__btn-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .product-page__btn-item {
+    width: 100%; }
+    .product-page__btn-item small {
+      margin-top: 5px; }
+    .product-page__btn-item .shipping {
+      width: 100%;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .product-page__btn-item:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 10px; }
+
+  .cd-tabs-content {
+    padding: 0 10px; } }
+@media screen and (max-width: 348px) {
+  .product-page .slider-vertical__item {
+    width: 69px;
+    height: 69px; }
+
+  .review-section__avatar {
+    margin-right: 4px;
+    width: 100px; }
+    .review-section__avatar img {
+      width: 80px;
+      height: 80px; } }
 @media screen and (max-width: 348px) {
   .nav-search {
     left: 35px; }

@@ -165,7 +165,7 @@
 
                         <ul class="shop__wrapper">
                             <li>
-                                <a class="shop-card">
+                                <div class="shop-card">
                                     <img src="img/shop-product3.jpg" alt="Athlete Stack">
                                     <span class="shop-card__title">
                                         Advanced Muscle Stack
@@ -185,7 +185,7 @@
                                     </div>
             
                                     <div class="shop-card__btn-line">
-                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <a href="product.php" class="btn btn_line-black">view product</a>
                                         <button href="#" class="btn btn_blue">add to cart</button>
                                     </div>
 
@@ -194,11 +194,11 @@
                                         <li hidden><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
                                         <li><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
                                     </ul>
-                                </a>
+                                </div>
                             </li>
 
                             <li>
-                                <a class="shop-card">
+                                <div class="shop-card">
                                     <img src="img/shop-product3.jpg" alt="Athlete Stack">
                                     <span class="shop-card__title">
                                         Advanced Muscle Stack
@@ -218,7 +218,7 @@
                                     </div>
             
                                     <div class="shop-card__btn-line">
-                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <a href="product.php" class="btn btn_line-black">view product</a>
                                         <button href="#" class="btn btn_blue">add to cart</button>
                                     </div>
 
@@ -227,11 +227,11 @@
                                         <li hidden><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
                                         <li><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
                                     </ul>
-                                </a>
+                                </div>
                             </li>
         
                             <li>
-                                <a class="shop-card">
+                                <div class="shop-card">
                                     <img src="img/shop-product3.jpg" alt="Athlete Stack">
                                     <span class="shop-card__title">
                                         Get Shredded – Athlete Stack
@@ -251,7 +251,7 @@
                                     </div>
             
                                     <div class="shop-card__btn-line">
-                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <a href="product.php" class="btn btn_line-black">view product</a>
                                         <button href="#" class="btn btn_blue added">Added</button>
                                     </div>
                                     <ul class="shop-card__category-line">
@@ -259,11 +259,11 @@
                                         <li><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
                                         <li><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
                                     </ul>
-                                </a>
+                                </div>
                             </li>
         
                             <li>
-                                <a class="shop-card">
+                                <div class="shop-card">
                                     <img src="img/shop-product3.jpg" alt="Athlete Stack">
                                     <span class="shop-card__title">
                                         Total Transformation Stack
@@ -283,7 +283,7 @@
                                     </div>
             
                                     <div class="shop-card__btn-line">
-                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <a href="product.php" class="btn btn_line-black">view product</a>
                                         <button href="#" class="btn btn_blue">add to cart</button>
                                     </div>
     
@@ -292,11 +292,11 @@
                                         <li><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
                                         <li><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
                                     </ul>
-                                </a>
+                                </div>
                             </li>
         
                             <li>
-                                <a class="shop-card">
+                                <div class="shop-card">
                                     <img src="img/shop-product2.jpg" alt="Athlete Stack">
                                     <span class="shop-card__title">
                                         Growth Stack
@@ -316,7 +316,7 @@
                                     </div>
             
                                     <div class="shop-card__btn-line">
-                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <a href="product.php" class="btn btn_line-black">view product</a>
                                         <button href="#" class="btn btn_blue">add to cart</button>
                                     </div>
 
@@ -325,11 +325,11 @@
                                         <li><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
                                         <li hidden><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
                                     </ul>
-                                </a>
+                                </div>
                             </li>
         
                             <li>
-                                <a class="shop-card">
+                                <div class="shop-card">
                                     <img src="img/shop-product2.jpg" alt="Athlete Stack">
                                     <span class="shop-card__title">
                                         Fitness Stack
@@ -349,7 +349,7 @@
                                     </div>
             
                                     <div class="shop-card__btn-line">
-                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <a href="product.php" class="btn btn_line-black">view product</a>
                                         <button href="#" class="btn btn_blue">add to cart</button>
                                     </div>
                                     <ul class="shop-card__category-line">
@@ -357,11 +357,11 @@
                                         <li><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
                                         <li><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
                                     </ul>
-                                </a>
+                                </div>
                             </li>
         
                             <li>
-                                <a class="shop-card">
+                                <div class="shop-card">
                                     <img src="img/shop-product2.jpg" alt="Athlete Stack">
                                     <span class="shop-card__title">
                                         Beginner Stack
@@ -381,7 +381,7 @@
                                     </div>
             
                                     <div class="shop-card__btn-line">
-                                        <button href="#" class="btn btn_line-black">view product</button>
+                                        <a href="product.php" class="btn btn_line-black">view product</a>
                                         <button href="#" class="btn btn_blue">add to cart</button>
                                     </div>
                                     <ul class="shop-card__category-line">
@@ -389,7 +389,7 @@
                                         <li><img src="img/product-hormones.svg" alt="INDIVIDUAL SARMS" width="40" height="40"></li>
                                         <li><img src="img/product-muscles2.svg" alt="MUSCLE BUILDING STACKS" width="40" height="40"></li>
                                     </ul>
-                                </a>
+                                </div>
                             </li>
                         </ul>
                 </section>
@@ -400,10 +400,7 @@
 
     <?php include('footer.php'); ?>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/nouislider.min.js"></script>
-
-    <script src="js/main.js"></script>
+    <?php include('scripts.php'); ?>
 
 </body>
 </html>

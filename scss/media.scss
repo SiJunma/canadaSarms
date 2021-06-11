@@ -68,6 +68,20 @@
             height: 200px;
         }
     }
+
+    .rangeslider .noUi-handle {
+        right: -17px;
+    }
+
+    .product-page {
+        &__img-section {
+            padding-left: 0;
+        }
+
+        &__wrapper {
+            grid-template-columns: 50% 13% 33%;
+        }
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -219,6 +233,31 @@
 
         .shop-card img {
             height: 100%;
+        }
+    }
+
+    .product-page {
+        &__wrapper {
+            grid-template-columns: 50% 15% auto;
+        }
+
+        .slider-single__item {
+            width: 304px;
+            height: 304px;
+        }
+
+        .slider-vertical__item {
+            width: 69px;
+            height: 69px;
+        }
+
+        &__slider-vertical {
+            .slick-slide {
+
+                &:not(:last-child) {
+                    margin-bottom: 7px;
+                }
+            }
         }
     }
 }
@@ -458,9 +497,47 @@
     }
 
     .noUi-horizontal .noUi-handle {
-        right: -7px;
+        right: -9px;
     }
 
+    .product-page {
+        &__wrapper {
+            grid-template-columns: auto auto; 
+            grid-template-rows: auto auto auto auto auto; 
+            grid-template-areas: 
+                "header header"
+                "img img"
+                "price btn"
+                "delivery delivery"
+                "qty qty"
+                "triggers triggers"; 
+        }
+
+        &__img-section {
+            padding-left: unset;
+            padding-right: unset;
+            margin-bottom: 30px;
+        }
+
+        .slider-single__item {
+            width: 364px;
+            height: 364px;
+        }
+
+        .slider-vertical__item {
+            width: 79px;
+            height: 79px;
+        }
+
+        &__slider-vertical {
+            .slick-slide {
+
+                &:not(:last-child) {
+                    margin-bottom: 14px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -871,6 +948,20 @@
     .popup-dropdown_login {
         top: 50px;
     }
+
+    .review-section {
+        &__item {
+            padding: 18px 25px 15px 10px;
+        }
+    
+        &__avatar {
+            margin-right: 20px;
+        }
+
+        &__form-line {
+            padding-left: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -921,6 +1012,76 @@
         width: calc(100% - 70px);
         max-width: 424px;
     }
+
+    .product-page {
+        .slider-single__item {
+            width: calc(100vw - 132px);
+            height: 364px;
+        }
+
+        &__price-box {
+            margin-bottom: 10px;
+        }
+
+        &__btn-box {
+            padding-top: unset;
+        }
+
+        &__delivery-box {
+            margin-bottom: 25px;
+        }
+
+        &__qty-box {
+            margin-bottom: 40px;
+        }
+
+        .product-page__triggers-box {
+            margin-top: 40px;
+        }
+
+        &__wrapper {
+            grid-template-areas: 
+            "header header"
+            "img img"
+            "price price" 
+            "delivery delivery"
+            "qty qty" 
+            "btn btn"
+            "triggers triggers";
+            grid-auto-flow: dense;
+            grid-template-rows: repeat(7, auto);
+        }
+    }
+
+    .review-section {
+        &__item {
+            grid-template-areas: 
+            "avatar data"
+            "content content"; 
+        }
+
+        &__date-line {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        &__date-post {
+            margin-bottom: 10px;
+            margin-left: 4px;
+        }
+
+        &__avatar {
+            margin-right: 13px;
+        }
+
+        &__text-post {
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+    }
+
 }
 
 @media screen and (max-width: 464px) {
@@ -972,6 +1133,48 @@
         right: 15px;
         bottom: 15px;
         max-width: 424px;
+    }
+
+    .product-page {
+        &__img-section {
+            flex-direction: column-reverse;
+        }
+
+        &__slider-single {
+            margin: 0;
+        }
+
+        .slider-single__item {
+            width: calc(100vw - 30px);
+            height: calc(100vw - 30px);
+        }
+
+        &__slider-vertical {
+            width: 100%;
+            height: 80px;
+            margin-top: 20px;
+
+            .slick-slide:not(:last-child) {
+                margin-bottom: 0px;
+                margin-right: 2em;
+            }
+        }
+
+        &__qty-radios fieldset {
+            width: 50%;
+        }
+
+        &__btn-item {
+            width: 50%;
+        }
+
+        &__btn-box .btn {
+            width: 100%;
+        }
+    }
+
+    .tabs-section {
+        margin-bottom: 70px;
     }
 }
 
@@ -1082,6 +1285,72 @@
             h3 {
                 font-size: 21px;
             }
+        }
+    }
+
+    .product-page {
+        &__slider-vertical {
+            margin-top: 10px;
+        }
+
+        &__qty-box {
+            margin-bottom: 30px;
+        }
+
+        &__qty-radios fieldset {
+            width: 100%;
+
+            label {
+                width: 90%; 
+                &::after {
+                    margin-left: auto;
+                }
+            }
+        }
+
+        &__btn-box {
+            flex-direction: column;
+        }
+
+        &__btn-item {
+            width: 100%;
+
+            small {
+                margin-top: 5px;
+            }
+
+            .shipping {
+                width: 100%;
+                justify-content: center;
+            }
+
+            &:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        } 
+    }
+
+    .cd-tabs-content {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 348px) {
+    .product-page {
+        .slider-vertical__item {
+            width: 69px;
+            height: 69px;
+        }
+    }
+
+    .review-section__avatar {
+        margin-right: 4px;
+        width: 100px;
+
+        img {
+            width: 80px;
+            height: 80px;
         }
     }
 }

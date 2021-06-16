@@ -252,7 +252,7 @@
                                     </div>
                                 </li>
 
-                                                                <li>
+                                <li>
                                     <div class="cart-popup__product">
                                         <div class="cart-popup__close-line">
                                             <span class="cart-popup__head">Product</span>

@@ -45,12 +45,6 @@
                                     <img src="img/shop-product2.jpg" alt="Side">
                                 </div>
                             </div>
-<!-- 
-                            <div>
-                                <div class="slider-vertical__item">
-                                    <img src="img/shop-product2.jpg" alt="Side">
-                                </div>
-                            </div> -->
 
                         </div>
 
@@ -69,16 +63,18 @@
                         </div>
                     </div>
     
-                    <h3 class="product-page__header">Advanced Muscle Stack</h3>
+                    <h3 class="product-page__header">Advanced Muscle Stack
+                        <span class="product-page__out">Goods are running out</span>
+                    </h3>
         
                     <div class="product-page__price-box">
-                        <small>$319</small>
-                        <p>$239</p>
+                        <small class="product-page__price-old-price">$319</small>
+                        <p class="product-page__price-value"><span>$239</span><span class="product-page__out">Goods are running out</span></p>
                     </div>
 
                     <div class="product-page__btn-box">
                         <div class="product-page__btn-item">
-                            <a href="#" class="btn btn_blue">BY now</a>
+                            <a href="cart.php" class="btn btn_blue">BY now</a>
                             <small>save 20%</small>
                         </div>
 
@@ -88,7 +84,7 @@
                         </div>
                     </div>
                     
-                    <div class="product-page__delivery-box">
+                    <div class="delivery-box product-page__delivery-box">
                         <span>Delivery: </span> 
                         <div class="select-box">
                             <div class="select-box__current" tabindex="1">
@@ -132,7 +128,7 @@
                                 <label class="select-box__option" for="4" aria-hidden="aria-hidden">Toast</label>
                               </li>
                             </ul>
-                          </div> 
+                        </div> 
                         <span> by 29/04/2021</span>
                     </div>
 

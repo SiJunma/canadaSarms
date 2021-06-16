@@ -6,6 +6,48 @@
     
     $(document).ready(function(){
 
+        $('.shop-slider').slick({
+            slidesToShow: 4,
+            arrows: false,
+            dots: false,
+            slidesToScroll: 2,
+            infinite: false,
+            swipeToSlide: true,
+
+            responsive: [
+                {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 4
+                    }
+                },
+
+                {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                    dots: true,
+                    }
+                },
+
+                {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                    dots: true,
+                    }
+                },
+
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    dots: true,
+                    }
+                },
+            ]
+        });
+
         $('.cd-tabs-navigation').slick({
             slidesToShow: 5,
             dots: false,

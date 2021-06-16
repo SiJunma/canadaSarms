@@ -82,6 +82,22 @@
             grid-template-columns: 50% 13% 33%;
         }
     }
+
+    .recently-products {
+        .slick-slide {
+            margin: 49px 40px;
+            margin-bottom: 100px;
+        }
+
+        .slick-list {
+            padding: 0 20px;
+        }
+    }
+
+    .recently-products .shop_category .shop-card::before {
+        height: calc(100% + 85px);
+        top: 8px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -260,6 +276,28 @@
             }
         }
     }
+
+    .recently-products {
+        padding-bottom: 100px;
+        .shop_category .shop-card::before {
+            height: calc(100% + 85px);
+            top: -4px;
+        }
+    }
+
+    .cart-page {
+        aside {
+            margin-left: 0;
+            margin-top: 50px;
+            max-width: 525px;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -962,6 +1000,32 @@
             padding-left: 0;
         }
     }
+
+    .recently-products {
+        .shop-card {
+            max-width: 300px;
+        }
+    }
+
+    .steps-section {
+        margin-top: 20px;
+    }
+
+    .cart-list__item {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px 30px 10px 30px;
+    }    
+
+    .cart-list__piece:first-child {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .cart-list__piece-title {
+        margin-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1082,6 +1146,14 @@
         }
     }
 
+    .product-page__out {
+        display: none;
+    }
+
+    .product-page__price-value .product-page__out {
+        display: flex;
+    }
+
 }
 
 @media screen and (max-width: 464px) {
@@ -1175,6 +1247,21 @@
 
     .tabs-section {
         margin-bottom: 70px;
+    }
+
+    .cart-totals__line {
+        h4 {
+            font-size: 15px;
+        }
+
+    }
+
+    .coupon-input {
+        flex-direction: column;
+
+        button {
+            height: 45px;
+        }
     }
 }
 
@@ -1333,6 +1420,31 @@
 
     .cd-tabs-content {
         padding: 0 10px;
+    }
+
+    .steps-section__wrapper > div:not(:last-child)::after {
+        width: 4em;
+        margin: 0 11px;
+    }
+
+    .cart-list__piece:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .cart-list__item {
+        padding: 20px 20px 10px 17px;
+    }
+
+    .cart-totals__line {
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &_form {
+            margin-top: 0;
+        }
     }
 }
 

@@ -164,7 +164,7 @@
                     </div>
 
                     <aside>
-                        <div class="cart-totals">
+                        <div class="cart-totals cart-totals_payment">
                             <h4>Cart totals</h4>
 
                             <div class="cart-totals__line">
@@ -174,7 +174,7 @@
 
                             <div class="cart-totals__line">
                                 <h4>Shipping</h4>
-                                <a href="#">FREE shipping</a>
+                                <a href="#">Calculate shipping</a>
                             </div>
 
                             <div class="cart-totals__line">
@@ -187,66 +187,54 @@
                                 <span class="cart-totals__total">$498.00</span>
                             </div>
 
-                            <div class="delivery-box cart-totals__line cart-totals__line_noborder">
-                                <h4>Delivery</h4>
-                                <div class="select-box">
-                                    <div class="select-box__current" tabindex="1">
-                                      <div class="select-box__value">
-                                        <input class="select-box__input" type="radio" id="0" value="1" name="delivery" checked="checked" value="Default sorting">
-                                        <p class="select-box__input-text">Vancouver</p>
-                                      </div>
-                                      <div class="select-box__value">
-                                        <input class="select-box__input" type="radio" id="1" value="2" name="delivery"/>
-                                        <p class="select-box__input-text">Cheese</p>
-                                      </div>
-                                      <div class="select-box__value">
-                                        <input class="select-box__input" type="radio" id="2" value="3" name="delivery"/>
-                                        <p class="select-box__input-text">Milk</p>
-                                      </div>
-                                      <div class="select-box__value">
-                                        <input class="select-box__input" type="radio" id="3" value="4" name="delivery"/>
-                                        <p class="select-box__input-text">Honey</p>
-                                      </div>
-                                      <div class="select-box__value">
-                                        <input class="select-box__input" type="radio" id="4" value="5" name="delivery"/>
-                                        <p class="select-box__input-text">Toast Honey Cheese</p>
-                                      </div>
-                                      
-                                      
-                                    </div>
-                                    <ul class="select-box__list">
-                                      <li>
-                                        <label class="select-box__option" for="0" aria-hidden="aria-hidden">Vancouver</label>
-                                      </li>
-                                      <li>
-                                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">Cheese</label>
-                                      </li>
-                                      <li>
-                                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">Milk</label>
-                                      </li>
-                                      <li>
-                                        <label class="select-box__option" for="3" aria-hidden="aria-hidden">Honey</label>
-                                      </li>
-                                      <li>
-                                        <label class="select-box__option" for="4" aria-hidden="aria-hidden">Toast Honey Cheese</label>
-                                      </li>
-                                    </ul>
-                                </div> 
-                                <span> at 29/04/2021</span>
+                            <div class="cart-totals__line cart-totals__line_noborder cart-totals__line_credit">
+                                <fieldset>
+                                    <input class="custom-checkbox" name="Credit Card" value="Credit Card" type="checkbox" id="creditCartCheck">
+                                    <label for="creditCartCheck">Credit Card</label>
+                                </fieldset>
+
+                                <img src="img/payment-metods.png" alt="Payment Metods" width="284" height="20">
+
+                                <span>Pay securely using your credit card.</span>
                             </div>
 
-                            <div class="cart-totals__line cart-totals__line_form cart-totals__line_noborder">
-                                <form>
-                                    <div class="coupon-input">
-                                        <input type="text" placeholder="Coupon code">
-                                        <button type="submit">Apply Coupon</button>
-                                    </div>
-                                </form>
-
-                                <a href="#" class="btn btn_blue">Proceed to checkout</a>
-
-                                <img src="img/payment-metods.jpg" alt="Payment Metods" width="284" height="20">
+                            <div class="cart-totals__line cart-totals__line cart-totals__line_noborder cart-totals__line_card">
+                                <h4>CARD NUMBER</h4>
+                                <fieldset>
+                                    <input type="text" name="card number 1" placeholder="****">
+                                    <input type="text" name="card number 2" placeholder="****">
+                                    <input type="text" name="card number 3" placeholder="****">
+                                    <input type="text" name="card number 4" placeholder="****">
+                                </fieldset>
                             </div>
+
+                            <div class="cart-totals__line cart-totals__line_noborder cart-totals__line_security">
+                                <fieldset>
+                                    <h5>EXPIRATION (MM/YY)</h5>
+                                    <input type="text" name="expiration" placeholder="MM / YY">
+                                </fieldset>
+
+                                <fieldset>
+                                    <h5>CARD SECURITY CODE</h5>
+                                    <input type="text" name="security code" placeholder="CSC">
+                                </fieldset>
+                            </div>
+
+                            <div class="cart-totals__line cart-totals__line_noborder cart-totals__line_checks">
+                                <fieldset>
+                                    <input class="custom-checkbox" name="E-Transfer" value="E-Transfer" type="checkbox" id="eTransfer">
+                                    <label for="eTransfer">E-Transfer</label>
+                                </fieldset>
+
+                                <fieldset>
+                                    <input class="custom-checkbox" name="Agree" value="Agree" type="checkbox" id="agreeCheck">
+                                    <label for="agreeCheck">
+                                        I HAVE READ AND AGREE TO THE WEBSITE TERMS AND CONDITIONS *
+                                    </label>
+                                </fieldset>
+                            </div>
+
+                            <button class="btn btn_blue">Place order</button>
                         </div>
                     </aside>
                 </div>

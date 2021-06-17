@@ -152,7 +152,7 @@
     .shop_bySarms .shop__wrapper > li {
       width: 100%; }
     .shop_bySarms .shop-card img {
-      height: 100%; }
+      height: 200px; }
 
   .product-page__wrapper {
     grid-template-columns: 50% 15% auto; }

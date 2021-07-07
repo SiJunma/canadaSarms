@@ -14,7 +14,7 @@
             <div class="breadcrumbs">
                 <ul class="breadcrumbs__list">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li> 
                         <a href="shop.php">Buy sarms</a>
@@ -71,6 +71,43 @@
                         <small class="product-page__price-old-price">$319</small>
                         <p class="product-page__price-value"><span>$239</span><span class="product-page__out">Goods are running out</span></p>
                     </div>
+
+                    <form class="variations_form cart customize-unpreviewable" action="http://2053187.bthost2.web.hosting-test.net/product/advanced-muscle-stack-copy/" method="post" enctype="multipart/form-data" data-product_id="103"  current-image="">
+	
+                        <table class="variations" cellspacing="0">
+                            <tbody>
+                                <tr class="attribute-pa_day-supply">
+                                    <td class="label">
+                                        <label for="pa_day-supply">
+                                        Quantity:
+                                        </label>
+                                    </td>
+                                    <td class="value">
+                                        <div><input type="radio" name="attribute_pa_day-supply" value="120-day-supply" id="pa_day-supply_v_120-day-supply103"><label for="pa_day-supply_v_120-day-supply103">(120-day Supply)</label></div><div><input type="radio" name="attribute_pa_day-supply" value="150-day-supply" id="pa_day-supply_v_150-day-supply103"><label for="pa_day-supply_v_150-day-supply103">(150-day Supply)</label></div><div><input type="radio" name="attribute_pa_day-supply" value="180-day-supply" id="pa_day-supply_v_180-day-supply103"><label for="pa_day-supply_v_180-day-supply103">(180-day Supply)</label></div><div><input type="radio" name="attribute_pa_day-supply" value="30-day-supply" id="pa_day-supply_v_30-day-supply103"><label for="pa_day-supply_v_30-day-supply103">(30-day Supply)</label></div><div><input type="radio" name="attribute_pa_day-supply" value="60-day-supply" id="pa_day-supply_v_60-day-supply103"><label for="pa_day-supply_v_60-day-supply103">(60-day Supply)</label></div><div><input type="radio" name="attribute_pa_day-supply" value="90-day-supply" id="pa_day-supply_v_90-day-supply103"><label for="pa_day-supply_v_90-day-supply103">(90-day Supply)</label></div><a class="reset_variations" href="#" style="visibility: hidden;">Clear</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        
+                        <div class="single_variation_wrap">
+                            <div class="woocommerce-variation single_variation" style="display: none;"></div><div class="woocommerce-variation-add-to-cart variations_button woocommerce-variation-add-to-cart-disabled">
+                            <div class="product-page__btn-item"><button type="submit" name="buy-one-click" class="btn btn_blue">BY now</button></div>
+                            <div class="quantity hidden">
+                                <input type="hidden" id="quantity_60dd8851b5333" class="qty" name="quantity" value="1">
+                            </div>
+                            
+                                <button type="submit" class="single_add_to_cart_button button alt disabled wc-variation-selection-needed">Add to cart</button>
+
+                                
+                                <input type="hidden" name="add-to-cart" value="103">
+                                <input type="hidden" name="product_id" value="103">
+                                <input type="hidden" name="variation_id" class="variation_id" value="0">
+                            </div>
+                        </div>
+
+                        
+                    </form>
 
                     <div class="product-page__btn-box">
                         <div class="product-page__btn-item">
@@ -132,7 +169,7 @@
                         <span> by 29/04/2021</span>
                     </div>
 
-                    <div class="product-page__qty-box">
+                    <div class="product-page__qty-box" hidden>
                         <span class="product-page__qty-header">Quantity:</span>
                         <div class="product-page__qty-radios">
                             <fieldset>

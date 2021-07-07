@@ -14,7 +14,7 @@
             <div class="breadcrumbs">
                 <ul class="breadcrumbs__list">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li> 
                         <a href="#" class="current">Buy sarms</a>
@@ -162,6 +162,18 @@
                                 </ul>
                               </div>
                         </div>
+
+                        <form class="woocommerce-ordering" method="get">
+                        <select name="orderby" class="orderby" aria-label="Shop order">
+                                        <option value="menu_order" selected="selected">Default sorting</option>
+                                        <option value="popularity">Sort by popularity</option>
+                                        <option value="rating">Sort by average rating</option>
+                                        <option value="date">Sort by latest</option>
+                                        <option value="price">Sort by price: low to high</option>
+                                        <option value="price-desc">Sort by price: high to low</option>
+                                </select>
+                        <input type="hidden" name="paged" value="1">
+                        </form>
 
                         <ul class="shop__wrapper">
                             <li>

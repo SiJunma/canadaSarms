@@ -37,7 +37,7 @@
                     quick links
                 </span>
     
-                <a href="#">blog</a>
+                <a href="blog.php">blog</a>
                 <a href="#">about</a>
                 <a href="#">usage guide</a>
                 <a href="#">faqS</a>

@@ -306,6 +306,27 @@
 
         }
     }
+
+    .blog-cart_mailing {
+        padding: 10px 15px;
+    }
+
+    .blog-main-prospekt {
+        padding-top: 10px;
+
+        &__big {
+            padding-right: 25px;
+        }
+
+        &__aside {
+            margin-left: 25px;
+        }
+    }
+
+    .blog-latest__wrapper .blog-cart {
+        width: 31%;
+    }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -583,6 +604,39 @@
                 }
             }
         }
+    }
+
+    .blog-main-prospekt {
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__big {
+            border: none;
+            padding-right: 0;
+            margin-bottom: 50px;
+            max-width: 686px;
+            width: 100%;
+        }
+
+        &__aside {
+            max-width: 686px;
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    .blog-cart_mailing {
+        margin-bottom: 50px;
+    }
+
+    .blog-latest h3 {
+        margin-bottom: 20px;
+    }
+
+    .blog-latest__wrapper .blog-cart {
+        width: 47%;
     }
 }
 
@@ -954,8 +1008,14 @@
         margin-bottom: 20px;
     }
 
-    .header-regular h3 {
-        display: none;
+    .header-regular {
+        h3 {
+            display: none;
+        }
+
+        &.header-blog h3 {
+            display: block;
+        }
     }
 
     .bySarms-wrapper {
@@ -1091,6 +1151,15 @@
     }
 
     .product-page {
+
+        &__out {
+            display: none;
+        }
+
+        &__price-value .product-page__out {
+            display: flex;
+        }
+
         .slider-single__item {
             width: calc(100vw - 132px);
             height: 364px;
@@ -1159,12 +1228,8 @@
         }
     }
 
-    .product-page__out {
-        display: none;
-    }
-
-    .product-page__price-value .product-page__out {
-        display: flex;
+    .blog-latest__wrapper .blog-cart {
+        width: 100%;
     }
 
 }

@@ -79,7 +79,7 @@
         }
 
         &__wrapper {
-            grid-template-columns: 50% 13% 33%;
+            grid-template-columns: 50% 50%;
         }
     }
 
@@ -253,8 +253,10 @@
     }
 
     .product-page {
-        &__wrapper {
-            grid-template-columns: 50% 15% auto;
+
+        .attribute-pa_day-supply .value {
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(3, auto);
         }
 
         .slider-single__item {
@@ -551,7 +553,7 @@
             grid-template-areas: 
                 "header header"
                 "img img"
-                "price btn"
+                "price price"
                 "delivery delivery"
                 "qty qty"
                 "triggers triggers"; 
@@ -1032,6 +1034,11 @@
     .cart-list__piece-title {
         margin-bottom: 0;
     }
+
+    .attribute-pa_day-supply .value {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1246,8 +1253,12 @@
             width: 50%;
         }
 
-        &__btn-box .btn {
+        .woocommerce-variation-add-to-cart {
             width: 100%;
+
+            .product-page__btn-item {
+                width: auto;
+            }
         }
     }
 
@@ -1300,6 +1311,11 @@
         input {
             width: calc(25% - 5px);
         }
+    }
+
+    .attribute-pa_day-supply .value {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(6, auto);
     }
 }
 
@@ -1414,6 +1430,20 @@
     }
 
     .product-page {
+
+        .attribute-pa_day-supply .value {
+            grid-template-columns: repeat(1, auto);
+            grid-template-rows: repeat(6, auto);
+
+            & > div {
+                width: 100%;
+            }
+        }
+
+        .variations {
+            width: 100%;
+        }
+
         &__slider-vertical {
             margin-top: 10px;
         }
@@ -1433,12 +1463,24 @@
             }
         }
 
-        &__btn-box {
+        .woocommerce-variation-add-to-cart {
             flex-direction: column;
+
+            button {
+                width: 100%;
+            }
+
+            .product-page__btn-item .btn.btn_blue {
+                width: 100%;
+            }
         }
 
         &__btn-item {
             width: 100%;
+
+            button {
+                width: 100%;
+            }
 
             small {
                 margin-top: 5px;

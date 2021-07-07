@@ -52,7 +52,7 @@
   .product-page__img-section {
     padding-left: 0; }
   .product-page__wrapper {
-    grid-template-columns: 50% 13% 33%; }
+    grid-template-columns: 50% 50%; }
 
   .recently-products .slick-slide {
     margin: 49px 40px;
@@ -154,8 +154,9 @@
     .shop_bySarms .shop-card img {
       height: 200px; }
 
-  .product-page__wrapper {
-    grid-template-columns: 50% 15% auto; }
+  .product-page .attribute-pa_day-supply .value {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto); }
   .product-page .slider-single__item {
     width: 304px;
     height: 304px; }
@@ -359,7 +360,7 @@
   .product-page__wrapper {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto;
-    grid-template-areas: "header header" "img img" "price btn" "delivery delivery" "qty qty" "triggers triggers"; }
+    grid-template-areas: "header header" "img img" "price price" "delivery delivery" "qty qty" "triggers triggers"; }
   .product-page__img-section {
     padding-left: unset;
     padding-right: unset;
@@ -723,7 +724,11 @@
     margin-bottom: 30px; }
 
   .cart-list__piece-title {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+
+  .attribute-pa_day-supply .value {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto); } }
 @media screen and (max-width: 576px) {
   .shop__wrapper {
     grid-template-columns: 1fr; }
@@ -864,8 +869,10 @@
     width: 50%; }
   .product-page__btn-item {
     width: 50%; }
-  .product-page__btn-box .btn {
+  .product-page .woocommerce-variation-add-to-cart {
     width: 100%; }
+    .product-page .woocommerce-variation-add-to-cart .product-page__btn-item {
+      width: auto; }
 
   .tabs-section {
     margin-bottom: 70px; }
@@ -904,7 +911,11 @@
     .cart-totals_payment .cart-totals__line_security fieldset:last-child {
       width: 100%; }
   .cart-totals_payment input {
-    width: calc(25% - 5px); } }
+    width: calc(25% - 5px); }
+
+  .attribute-pa_day-supply .value {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, auto); } }
 @media screen and (max-width: 400px) {
   .footer__wrapper {
     grid-template-columns: auto auto;
@@ -966,6 +977,13 @@
     .popup-feedback .popup-feedback__body h3 {
       font-size: 21px; }
 
+  .product-page .attribute-pa_day-supply .value {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, auto); }
+    .product-page .attribute-pa_day-supply .value > div {
+      width: 100%; }
+  .product-page .variations {
+    width: 100%; }
   .product-page__slider-vertical {
     margin-top: 10px; }
   .product-page__qty-box {
@@ -976,13 +994,19 @@
       width: 90%; }
       .product-page__qty-radios fieldset label::after {
         margin-left: auto; }
-  .product-page__btn-box {
+  .product-page .woocommerce-variation-add-to-cart {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+    .product-page .woocommerce-variation-add-to-cart button {
+      width: 100%; }
+    .product-page .woocommerce-variation-add-to-cart .product-page__btn-item .btn.btn_blue {
+      width: 100%; }
   .product-page__btn-item {
     width: 100%; }
+    .product-page__btn-item button {
+      width: 100%; }
     .product-page__btn-item small {
       margin-top: 5px; }
     .product-page__btn-item .shipping {

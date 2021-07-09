@@ -9,6 +9,6 @@
         <div class="blog-cart__text">
             <?php echo ($text) ?>
         </div>
-        <a href="#" class="blog-cart__link">details</a>
+        <a href="article.php" class="blog-cart__link">details</a>
     </div>
 </div>

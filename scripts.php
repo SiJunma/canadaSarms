@@ -6,6 +6,30 @@
     
     $(document).ready(function(){
 
+        $('.interested__slider').slick({
+            slidesToShow: 3,
+            arrows: false,
+            dots: false,
+            slidesToScroll: 1,
+            infinite: false,
+            swipeToSlide: true,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+
+                {
+                    breakpoint: 430,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ],
+        });
+
         $('.shop-slider').slick({
             slidesToShow: 4,
             arrows: false,

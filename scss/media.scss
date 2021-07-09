@@ -98,6 +98,16 @@
         height: calc(100% + 85px);
         top: 8px;
     }
+
+    .reply__wrapper {
+        textarea {
+            width: calc(65% - 30px);
+        }
+    }
+
+    .reply__inputs {
+        width: 35%;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -319,12 +329,23 @@
         }
 
         &__aside {
-            margin-left: 25px;
+            padding-left: 25px;
         }
     }
 
     .blog-latest__wrapper .blog-cart {
         width: 31%;
+    }
+
+    .reply__wrapper {
+        textarea {
+            width: calc(65% - 20px);
+            margin-right: 20px;
+        }
+    }
+
+    .reply__inputs {
+        width: 35%;
     }
 
 }
@@ -613,7 +634,6 @@
         }
 
         &__big {
-            border: none;
             padding-right: 0;
             margin-bottom: 50px;
             max-width: 686px;
@@ -623,7 +643,8 @@
         &__aside {
             max-width: 686px;
             width: 100%;
-            margin-left: 0;
+            padding-left: 0;
+            border: none;
         }
     }
 
@@ -637,6 +658,10 @@
 
     .blog-latest__wrapper .blog-cart {
         width: 47%;
+    }
+
+    .interested__wrapper {
+        width: 100%;
     }
 }
 
@@ -1099,6 +1124,35 @@
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(3, auto);
     }
+
+    .reply__wrapper {
+        flex-direction: column;
+
+        textarea {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    .reply__inputs {
+        width: 100%;
+        margin-top: 10px;
+
+        input {
+            margin-bottom: 10px;
+        }
+    }
+
+    .reply__checkbox {
+        input {
+            margin-bottom: 0;
+        }
+
+        span {
+            margin-top: 7px;
+        }
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -1230,6 +1284,22 @@
 
     .blog-latest__wrapper .blog-cart {
         width: 100%;
+    }
+
+    .interested__line {
+        margin-bottom: 15px;
+        
+        a {
+            display: none;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    .blog-main-prospekt:last-of-type {
+        margin-bottom: 50px;
     }
 
 }

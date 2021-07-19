@@ -6,6 +6,16 @@
     
     $(document).ready(function(){
 
+        $('.header-slider').slick({
+            slidesToShow: 1,
+            dots: false,
+            arrows: false,
+            infinite: true,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 3000,
+        });
+
         $('.interested__slider').slick({
             slidesToShow: 3,
             arrows: false,

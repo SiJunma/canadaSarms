@@ -802,6 +802,7 @@ h4 {
         align-items: center;
         margin: 0 auto;
         justify-content: center;
+        margin: 0 10px;
     }
 
     &__offer {
@@ -4611,4 +4612,58 @@ h4 {
 
 .blog-main-prospekt:last-of-type {
     margin-bottom: 100px;
+}
+
+.review-filter {
+    .select-area {
+        display: flex;
+        flex-direction: column;
+        margin-right: 25px;
+
+        span {
+            font-weight: normal;
+            font-size: 14px;
+            text-transform: uppercase;
+
+            color: #313131;
+            margin-bottom: 7px;
+        }
+
+        select {
+            height: 40px;
+            width: 242px;
+            border: 1px solid #000000;
+            font-size: 16px;
+            color: #353F52;
+            padding: 10px 15px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-end;
+
+        .btn {
+            height: 40px;
+        }
+    }
+}
+
+.promo-section {
+    background: #F1F1F1;
+    text-align: center;
+    padding: 70px 0;
+    padding-bottom: 70px;
+
+    &__img {
+        width: 740px; 
+        margin: 0 auto;
+        margin-top: 40px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+    }
 }

@@ -9,17 +9,36 @@
 
     <header class="header-main">
         <div class="container">
-            <div class="header-main__wrapper">
-                <div class="header-main__offer">
-                    <h1>Conquer Your Goals</h1>
-                    <p class="sub-header">
-                        #1 SOURCE OF HIGHEST QUALITY STACKS AND NATURAL SUPPLEMENTS
-                    </p>
-                    <a href="shop.php" class="btn">SEE PRODUCTS</a>
+            <div class="header-slider">
+                <div>
+                    <div class="header-main__wrapper">
+                        <div class="header-main__offer">
+                            <h1>Conquer Your Goals</h1>
+                            <p class="sub-header">
+                                #1 SOURCE OF HIGHEST QUALITY STACKS AND NATURAL SUPPLEMENTS
+                            </p>
+                            <a href="shop.php" class="btn">SEE PRODUCTS</a>
+                        </div>
+
+                        <div class="header-main__product">
+                            <img src="img/home-product.jpg" alt="Product" width="562" height="342">
+                        </div>
+                    </div>
                 </div>
-    
-                <div class="header-main__product">
-                    <img src="img/home-product.jpg" alt="Product" width="562" height="342">
+                <div>
+                    <div class="header-main__wrapper">
+                        <div class="header-main__offer">
+                            <h1>Conquer Your Goals</h1>
+                            <p class="sub-header">
+                                #1 SOURCE OF HIGHEST QUALITY STACKS AND NATURAL SUPPLEMENTS
+                            </p>
+                            <a href="shop.php" class="btn">SEE PRODUCTS</a>
+                        </div>
+
+                        <div class="header-main__product">
+                            <img src="img/home-product.jpg" alt="Product" width="562" height="342">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -252,6 +271,19 @@
                         <img src="img/athlete.svg" alt="Fat Burning" width="119" height="119">
                         fat burning stacks
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="promo-section">
+            <div class="container">
+                <div class="promo-section__wrapper">
+                    <h2>SCIENCE • EXCELLENCE • QUALITY • RESULTS</h2>
+                    <div class="promo-section__img">
+                        <img src="img/protein-products.png" alt="protein-products">
+                    </div>
+
+                    <a href="#" class="btn">See Products</a>
                 </div>
             </div>
         </section>

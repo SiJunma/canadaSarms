@@ -4780,3 +4780,75 @@ h5 {
     }
 
 }
+
+.about-desc {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text-content {
+        width: 50%;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    &__media {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 100px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.about-triggers {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    margin-bottom: 60px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+
+    &__img {
+        width: 74px;
+        margin-right: 20px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__title {
+        color: #000000;
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: #353F52;
+        font-weight: normal;
+        font-size: 14px;
+        margin: 0;
+    }
+}

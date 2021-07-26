@@ -108,6 +108,10 @@
     .reply__inputs {
         width: 35%;
     }
+
+    .about-desc__wrapper {
+        align-items: flex-start;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -356,6 +360,40 @@
 
     .reply__inputs {
         width: 35%;
+    }
+
+    .about-desc {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__text-content {
+            width: 100%;
+            margin-bottom: 35px;
+        }
+
+        &__media {
+            padding-left: 0;
+        }
+    }
+
+    .about-triggers {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin-bottom: 0;
+        margin-bottom: 20px;
+
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__item {
+            margin-bottom: 35px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
 }
@@ -739,6 +777,10 @@
             width: 100%;
             text-align: right;
         }
+    }
+
+    .about-desc__media {
+        width: 80%;
     }
 
 }
@@ -1261,6 +1303,10 @@
             width: auto;
             text-align: right;
         }
+    }
+
+    .about-desc__media {
+        width: 100%;
     }
 
 }
@@ -1818,6 +1864,26 @@
             text-align: right;
         }
     }
+
+    
+    .about-triggers {
+        &__img {
+            width: 55px;
+            margin-right: 15px;
+        }
+
+        &__item {
+            margin-bottom: 30px;
+        }
+
+        &__title {
+            font-size: 14px;
+        }
+
+        &__text {
+            font-size: 13px;
+        }
+    }
 }
 
 @media screen and (max-width: 348px) {
@@ -1837,6 +1903,7 @@
             height: 80px;
         }
     }
+
 }
 
 @media screen and (max-width: 348px) {

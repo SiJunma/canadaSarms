@@ -68,7 +68,12 @@
     width: calc(65% - 30px); }
 
   .reply__inputs {
-    width: 35%; } }
+    width: 35%; }
+
+  .about-desc__wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
 @media screen and (max-width: 1200px) {
   .header-main {
     padding-top: 30px;
@@ -228,7 +233,33 @@
     margin-right: 20px; }
 
   .reply__inputs {
-    width: 35%; } }
+    width: 35%; }
+
+  .about-desc__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .about-desc__text-content {
+    width: 100%;
+    margin-bottom: 35px; }
+  .about-desc__media {
+    padding-left: 0; }
+
+  .about-triggers {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 0;
+    margin-bottom: 20px; }
+    .about-triggers__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .about-triggers__item {
+      margin-bottom: 35px; }
+      .about-triggers__item:last-child {
+        margin-bottom: 0; } }
 @media screen and (max-width: 992px) {
   body {
     padding-top: 105px; }
@@ -500,7 +531,10 @@
         -ms-flex-order: 0;
             order: 0;
     width: 100%;
-    text-align: right; } }
+    text-align: right; }
+
+  .about-desc__media {
+    width: 80%; } }
 @media screen and (max-width: 768px) {
   .header-main__wrapper {
     -webkit-box-orient: vertical;
@@ -906,7 +940,10 @@
         -ms-flex-order: 3;
             order: 3;
     width: auto;
-    text-align: right; } }
+    text-align: right; }
+
+  .about-desc__media {
+    width: 100%; } }
 @media screen and (max-width: 576px) {
   .shop__wrapper {
     grid-template-columns: 1fr; }
@@ -1270,7 +1307,17 @@
         -ms-flex-order: 0;
             order: 0;
     width: 100%;
-    text-align: right; } }
+    text-align: right; }
+
+  .about-triggers__img {
+    width: 55px;
+    margin-right: 15px; }
+  .about-triggers__item {
+    margin-bottom: 30px; }
+  .about-triggers__title {
+    font-size: 14px; }
+  .about-triggers__text {
+    font-size: 13px; } }
 @media screen and (max-width: 348px) {
   .product-page .slider-vertical__item {
     width: 69px;

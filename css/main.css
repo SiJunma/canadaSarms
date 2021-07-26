@@ -61,6 +61,12 @@ h4 {
   text-transform: uppercase;
   color: #000000; }
 
+h5 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  color: #353F52; }
+
 .btn {
   text-decoration: none;
   color: #FFFFFF;
@@ -4253,7 +4259,13 @@ h4 {
 .blog-main-prospekt:last-of-type {
   margin-bottom: 100px; }
 
-.review-filter .select-area {
+.reviews-filter label {
+  font-weight: normal;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #313131;
+  margin-bottom: 7px; }
+.reviews-filter .select-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4261,29 +4273,41 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 25px; }
-  .review-filter .select-area span {
-    font-weight: normal;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: #313131;
-    margin-bottom: 7px; }
-  .review-filter .select-area select {
+  margin-right: 25px;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
+  .reviews-filter .select-area::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    right: 15px;
+    top: 17px;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 8L0.669873 0.499999L9.33013 0.5L5 8Z' fill='%23525252'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .reviews-filter .select-area select {
     height: 40px;
     width: 242px;
     border: 1px solid #000000;
     font-size: 16px;
     color: #353F52;
-    padding: 10px 15px; }
-.review-filter__wrapper {
+    padding: 10px 15px;
+    cursor: pointer;
+    -webkit-appearance: none; }
+.reviews-filter__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end; }
-  .review-filter__wrapper .btn {
-    height: 40px; }
+  .reviews-filter__wrapper .btn {
+    height: 40px;
+    border: 1px solid #359BD1; }
 
 .promo-section {
   background: #F1F1F1;
@@ -4297,5 +4321,89 @@ h4 {
     .promo-section__img img {
       width: 100%;
       height: auto; }
+
+.reviews-list {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  .reviews-list__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -17px; }
+
+.review__item {
+  padding: 20px;
+  border: 1px solid #DEDEDE;
+  -ms-flex-preferred-size: calc(50% - 34px);
+      flex-basis: calc(50% - 34px);
+  margin: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+.review__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+.review__author {
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px; }
+.review__image {
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  margin-right: 16px; }
+.review__date {
+  font-weight: normal;
+  font-size: 12px;
+  color: #000000;
+  margin-left: auto;
+  margin-bottom: auto; }
+.review__content {
+  font-size: 16px;
+  line-height: 20px;
+  color: #353F52;
+  margin-top: 15px; }
+.review__rank {
+  margin-top: auto;
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  .review__rank .star-rating span {
+    width: 17px;
+    height: 17px; }
+  .review__rank-product {
+    width: 79px;
+    height: 79px;
+    border: 1px solid #DFDFDF;
+    padding: 10px; }
+    .review__rank-product img {
+      width: 100%;
+      height: auto;
+      -o-object-fit: contain;
+         object-fit: contain; }
+  .review__rank-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto 0;
+    margin-left: 20px; }
 
 /*# sourceMappingURL=main.css.map */

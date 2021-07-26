@@ -48,7 +48,7 @@
                     shop links
                 </span>
     
-                <a href="#">BUY SARMS</a>
+                <a href="shop.php">BUY SARMS</a>
                 <a href="#">MY ACCOUNT</a>
                 <a href="#">TERMS AND CONDITIONS</a>
             </div>

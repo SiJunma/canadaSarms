@@ -685,6 +685,62 @@
     .interested__wrapper {
         width: 100%;
     }
+
+    .reviews-filter {
+
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            flex-basis: 50%;
+            padding-right: 25px;
+            margin-bottom: 15px;
+        }
+
+        .select-area {
+            width: 100%;
+
+            select {
+                width: 100%;
+            }
+        }
+    }
+
+    .reviews-list__wrapper {
+        margin: -10px;
+    }
+
+    .reviews-list {
+        margin-top: 40px;
+    }
+
+    .review {
+        &__item {
+            flex-basis: calc(50% - 20px);
+            margin: 10px;
+        }
+
+        &__image {
+            order: 1;
+        }
+
+        &__author {
+            order: 2;
+        }
+
+        &__line {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__date {
+            order: 0;
+            width: 100%;
+            text-align: right;
+        }
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -1182,6 +1238,31 @@
         }
         margin-bottom: 10px;
     }
+
+    .review__item {
+        flex-basis: 100%;
+    }
+
+    .review {
+        &__image {
+            order: 1;
+        }
+    
+        &__author {
+            order: 2;
+        }
+    
+        &__line {
+            flex-wrap: nowrap;
+        }
+    
+        &__date {
+            order: 3;
+            width: auto;
+            text-align: right;
+        }
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -1704,7 +1785,39 @@
                 margin-left: 0;
             }
         }
-    }    
+    }  
+    
+    .reviews-filter__wrapper {
+        flex-direction: column;
+    }
+
+    .reviews-filter__item {
+        flex-basis: 100%;
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .review {
+
+        &__image {
+            order: 1;
+        }
+
+        &__author {
+            order: 2;
+        }
+
+        &__line {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__date {
+            order: 0;
+            width: 100%;
+            text-align: right;
+        }
+    }
 }
 
 @media screen and (max-width: 348px) {

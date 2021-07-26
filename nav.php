@@ -37,7 +37,7 @@
                     <li><a href="#buySarms" class="menu-dropdown">buy sarms</a></li>
                     <li><a href="#supplements" class="menu-dropdown">supplements</a></li>
                     <li><a href="#pctherapy" class="menu-dropdown">post cycle therapy</a></li>
-                    <li><a href="#">reviews</a></li>
+                    <li><a href="reviews.php">reviews</a></li>
                 </ul>
 
                 <form class="nav-search" id="navSearch" autocomplete="off">

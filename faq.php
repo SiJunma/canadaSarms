@@ -27,7 +27,7 @@
     <main>
         <section class="faq-btn-area">
             <div class="container">
-                <a href="#" class="btn btn_line-black">Usage Guide</a>
+                <a href="guide.php" class="btn btn_line-black">Usage Guide</a>
             </div>
         </section>
 

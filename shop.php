@@ -117,7 +117,7 @@
                 <section class="shop shop_bySarms">
                     <h2 hidden>shop</h2>
 
-                        <div class="shop__sorting-wrapper">
+                        <!-- <div class="shop__sorting-wrapper">
                             <div class="select-box">
                                 <div class="select-box__current" tabindex="1">
                                   <div class="select-box__value">
@@ -161,7 +161,7 @@
                                   </li>
                                 </ul>
                               </div>
-                        </div>
+                        </div> -->
 
                         <form class="woocommerce-ordering" method="get">
                         <select name="orderby" class="orderby" aria-label="Shop order">

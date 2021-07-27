@@ -409,6 +409,10 @@
         margin-top: 40px;
     }
 
+    .guide-instruction__list li {
+        width: 32%;
+    }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -818,6 +822,29 @@
                 }
             }
         }
+    }
+
+    .guide-instruction__wrapper {
+        align-items: flex-start;
+    }
+
+    .guide-instruction__list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 25px;
+
+        li {
+            width: 100%;
+            margin-bottom: 25px;
+
+            img {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .guide-instruction {
+        margin-bottom: 30px;
     }
 }
 
@@ -1552,6 +1579,14 @@
         }
     }
 
+    .tabs_guide .guide-list li {
+        padding: 13px 15px;
+    }
+
+    .tabs_guide .guide-list__title {
+        width: 135px;
+    }
+
 }
 
 @media screen and (max-width: 464px) {
@@ -1959,7 +1994,6 @@
         }
     }
 
-    
     .about-triggers {
         &__img {
             width: 55px;
@@ -1977,6 +2011,10 @@
         &__text {
             font-size: 13px;
         }
+    }
+
+    .tabs_guide .cd-tabs-navigation {
+        width: 100%;
     }
 }
 

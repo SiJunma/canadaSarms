@@ -38,14 +38,14 @@
                 </span>
     
                 <a href="blog.php">blog</a>
-                <a href="#">about</a>
+                <a href="about.php">about</a>
                 <a href="#">usage guide</a>
-                <a href="#">faqS</a>
+                <a href="faq.php">faqS</a>
             </div>
     
             <div class="footer__item">
                 <span class="footer__category">
-                    shop links
+                    Shop links
                 </span>
     
                 <a href="shop.php">BUY SARMS</a>

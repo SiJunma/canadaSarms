@@ -4472,4 +4472,78 @@ h5 {
     font-size: 14px;
     margin: 0; }
 
+.faq-btn-area {
+  margin-bottom: 26px; }
+  .faq-btn-area .btn {
+    -webkit-filter: none;
+            filter: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 33px;
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; }
+    .faq-btn-area .btn:hover {
+      background-color: #000;
+      color: #fff; }
+
+.faq-section .custom-accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .faq-section .custom-accordion .active + .custom-accordion__panel {
+    padding-bottom: 30px; }
+.faq-section__column {
+  width: 48%; }
+
+.faq-form {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  .faq-form h5 {
+    color: #292929; }
+  .faq-form__wrapper textarea {
+    border: 1px solid #000000;
+    padding: 8px 16px;
+    width: 100%;
+    max-width: 560px; }
+  .faq-form__wrapper form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .faq-form__wrapper .btn {
+    margin-top: 18px;
+    -webkit-filter: none;
+            filter: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; }
+    .faq-form__wrapper .btn:hover {
+      background-color: #000;
+      color: #fff; }
+
 /*# sourceMappingURL=main.css.map */

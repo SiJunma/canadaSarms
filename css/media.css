@@ -534,7 +534,10 @@
     text-align: right; }
 
   .about-desc__media {
-    width: 80%; } }
+    width: 80%; }
+
+  .faq-section__column {
+    width: 100%; } }
 @media screen and (max-width: 768px) {
   .header-main__wrapper {
     -webkit-box-orient: vertical;

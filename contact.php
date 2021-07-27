@@ -75,13 +75,13 @@
                             <h3>Join Our Mailing List</h3>
                             <form class="contacts-section__form">
                                 <div class="contacts-section__form-item">
-                                    <label for="">canadasarm@gmail.com</label>
-                                    <input type="text" placeholder="email address...">
+                                    <label for="contact_email">canadasarm@gmail.com</label>
+                                    <input id="contact_email" type="mail" name="Email" placeholder="email address...">
                                 </div>
 
                                 <div class="contacts-section__form-item">
-                                    <label for="">+380934526202 (OPTIONAL)</label>
-                                    <input type="text" placeholder="phone">
+                                    <label for="contact_phone">+380934526202 (OPTIONAL)</label>
+                                    <input id="contact_phone" type="phone" name="Phone" placeholder="phone">
                                 </div>
 
                                 <button type="submit" class="btn btn_line-black">Send</button>

@@ -274,4 +274,17 @@ $( document ).ready(function() {
         });
     }
 
+    //my account switcher
+    $('.login-section .js-register').click(evt => {
+        evt.preventDefault();
+        $('.login-section').removeClass('visible');
+        $('.register-section').addClass('visible');
+    });
+
+    $('.register-section .js-login').click(evt => {
+        evt.preventDefault();
+        $('.login-section').addClass('visible');
+        $('.register-section').removeClass('visible');
+    });
+
 });

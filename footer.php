@@ -39,8 +39,9 @@
     
                 <a href="blog.php">blog</a>
                 <a href="about.php">about</a>
-                <a href="#">usage guide</a>
+                <a href="guide.php">usage guide</a>
                 <a href="faq.php">faqS</a>
+                <a href="contact.php">Contact us</a>
             </div>
     
             <div class="footer__item">
@@ -49,8 +50,8 @@
                 </span>
     
                 <a href="shop.php">BUY SARMS</a>
-                <a href="#">MY ACCOUNT</a>
-                <a href="#">TERMS AND CONDITIONS</a>
+                <a href="account-enter.php">MY ACCOUNT</a>
+                <a href="terms.php">TERMS AND CONDITIONS</a>
             </div>
     
             <div class="footer__item">

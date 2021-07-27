@@ -4639,4 +4639,163 @@ h5 {
     -webkit-transition: background 0.3s ease;
     transition: background 0.3s ease; }
 
+.login-section {
+  display: none;
+  margin-bottom: 100px; }
+  .login-section.visible {
+    display: block; }
+  .login-section h3 {
+    color: #000000;
+    margin-bottom: 35px; }
+  .login-section__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    margin: 0 auto; }
+  .login-section__form {
+    width: 100%;
+    max-width: 520px; }
+  .login-section__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px; }
+    .login-section__item:last-of-type {
+      margin-bottom: 0; }
+    .login-section__item label {
+      font-weight: normal;
+      font-size: 14px;
+      margin-bottom: 7px; }
+    .login-section__item input {
+      border: 1px solid #CFCFCF;
+      height: 45px;
+      padding: 0 16px; }
+      .login-section__item input[type="password"] {
+        font-size: 40px; }
+  .login-section__controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .login-section__controls .btn {
+      margin-right: 25px;
+      height: 33px;
+      border: 1px solid #359BD1;
+      border-radius: 12px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 160px;
+      -webkit-box-shadow: 0px 0px 16px #D8E7EF;
+              box-shadow: 0px 0px 16px #D8E7EF;
+      -webkit-filter: none;
+              filter: none; }
+    .login-section__controls a {
+      margin-left: auto; }
+  .login-section__create {
+    margin-left: 6em; }
+    .login-section__create .btn {
+      -webkit-filter: none;
+              filter: none;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-radius: 12px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 20px;
+      width: 160px;
+      height: 33px;
+      -webkit-transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease; }
+      .login-section__create .btn:hover {
+        background-color: #000;
+        color: #fff; }
+  .login-section__list {
+    font-size: 14px;
+    color: #353F52;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .login-section__list li {
+      margin-bottom: 14px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .login-section__list li::before {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+        border-radius: 50%;
+        margin-top: 5px;
+        margin-right: 12px;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+
+.register-section {
+  margin-bottom: 100px;
+  display: none; }
+  .register-section h3 {
+    color: #000;
+    margin-bottom: 20px; }
+  .register-section.visible {
+    display: block; }
+  .register-section p {
+    font-weight: normal;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 15px; }
+  .register-section .btn {
+    margin-right: 25px;
+    height: 33px;
+    border: 1px solid #359BD1;
+    border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 160px;
+    -webkit-box-shadow: 0px 0px 16px #D8E7EF;
+            box-shadow: 0px 0px 16px #D8E7EF;
+    -webkit-filter: none;
+            filter: none;
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; }
+    .register-section .btn:hover {
+      background-color: #000;
+      color: #fff; }
+
 /*# sourceMappingURL=main.css.map */

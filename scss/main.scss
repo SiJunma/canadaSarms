@@ -4804,9 +4804,38 @@ h5 {
         justify-content: flex-end;
         padding-left: 100px;
 
-        img {
-            width: 100%;
-            height: auto;
+        &-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &-play-btn {
+            position: absolute;
+            display: block;
+            width: 60px;
+            height: 60px;
+            background: #029FD1;
+            border: none;
+            font-size: 0;
+            border-radius: 50%;
+            padding: 0;
+            flex-shrink: 0;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            background-image: url("data:image/svg+xml,%3Csvg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23 11.5001L5.75 21.4594L5.75 1.54077L23 11.5001Z' fill='white'/%3E%3C/svg%3E%0A");
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 }

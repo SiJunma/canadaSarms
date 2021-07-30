@@ -37,7 +37,10 @@
                         </p>
                     </div>
                     <div class="about-desc__media">
-                        <img src="img/video-placeholder.png" alt="placeholder">
+                        <div class="about-desc__media-container">
+                            <button type="button" class="about-desc__media-play-btn">Play</button>
+                            <img src="img/video-placeholder.png" alt="placeholder">
+                        </div>
                     </div>
                 </div>
             </div>

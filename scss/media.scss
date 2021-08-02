@@ -1587,6 +1587,15 @@
         width: 135px;
     }
 
+    .mobile-hiden {
+        display: none;
+    }
+
+    .promo-section__wrapper h2 {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width: 464px) {
@@ -2015,6 +2024,10 @@
 
     .tabs_guide .cd-tabs-navigation {
         width: 100%;
+    }
+
+    .promo-section__wrapper h2 {
+        font-size: 24px;
     }
 }
 

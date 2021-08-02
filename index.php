@@ -278,7 +278,7 @@
         <section class="promo-section">
             <div class="container">
                 <div class="promo-section__wrapper">
-                    <h2>SCIENCE • EXCELLENCE • QUALITY • RESULTS</h2>
+                    <h2><span>SCIENCE • EXCELLENCE</span><span class="mobile-hiden"> • </span><span>QUALITY • RESULTS</span></h2>
                     <div class="promo-section__img">
                         <img src="img/protein-products.png" alt="protein-products">
                     </div>

@@ -27,16 +27,8 @@
                 </div>
                 <div>
                     <div class="header-main__wrapper">
-                        <div class="header-main__offer">
-                            <h1>Conquer Your Goals</h1>
-                            <p class="sub-header">
-                                #1 SOURCE OF HIGHEST QUALITY STACKS AND NATURAL SUPPLEMENTS
-                            </p>
-                            <a href="shop.php" class="btn">SEE PRODUCTS</a>
-                        </div>
-
-                        <div class="header-main__product">
-                            <img src="img/home-product.jpg" alt="Product" width="562" height="342">
+                        <div class="header-main__product-full">
+                            <img src="img/protein-products.png" alt="protein-products">
                         </div>
                     </div>
                 </div>

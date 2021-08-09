@@ -835,6 +835,18 @@ h5 {
             height: auto;
         }
     }
+
+    &__product-full {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 
 .triggers {

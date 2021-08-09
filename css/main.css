@@ -730,6 +730,20 @@ h5 {
   .header-main__product img {
     width: 100%;
     height: auto; }
+  .header-main__product-full {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto; }
+    .header-main__product-full img {
+      width: 100%;
+      height: auto; }
 
 .triggers {
   padding-top: 60px;

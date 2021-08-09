@@ -1019,7 +1019,10 @@
         max-width: 300px; }
 
   .login-section__wrapper {
-    width: 100%; } }
+    width: 100%; }
+
+  .header-main {
+    padding-bottom: 0px; } }
 @media screen and (max-width: 576px) {
   .shop__wrapper {
     grid-template-columns: 1fr; }

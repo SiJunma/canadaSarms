@@ -33,8 +33,14 @@
 
                     <div class="cart-page__cart-wrapper">
                         <div class="discount-section">
-                            <span>Double my SARMs Order - Save 25%</span>
-                            <small>*EXCEPT for these 2 categories: Post Cycle Therapy, Supplements</small>
+                            <fieldset>
+                                <input value="Discount 25%" type="checkbox" class="custom-checkbox" name="Discount" id="discountInput">
+                                <label for="discountInput">Double my SARMs Order - Save 25%</label>
+                            </fieldset>
+
+                            <p>
+                                <small>*EXCEPT for these 2 categories: Post Cycle Therapy, Supplements</small>
+                            </p>
                         </div>
     
                         <ul class="cart-list">
@@ -45,7 +51,7 @@
                                             PRODUCT
                                         </span>
                                         <div class="cart-list__piece-product">
-                                            <img class="cart-list__piece-product-img" src="img/shop-product3.png" alt="Advanced Muscle Stack - 30-day supply">
+                                            <img class="cart-list__piece-product-img" src="img/shop-product3.jpg" alt="Advanced Muscle Stack - 30-day supply">
                                             <a href="#" class="cart-list__piece-product-title">Advanced Muscle Stack - 30-day supply</a>
                                         </div>
                                     </div>
@@ -89,7 +95,7 @@
                                             PRODUCT
                                         </span>
                                         <div class="cart-list__piece-product">
-                                            <img class="cart-list__piece-product-img" src="img/shop-product2.png" alt="Advanced Muscle Stack - 30-day supply">
+                                            <img class="cart-list__piece-product-img" src="img/shop-product2.jpg" alt="Advanced Muscle Stack - 30-day supply">
                                             <span class="cart-list__piece-product-title">Advanced Muscle Stack - 30-day supply</span>
                                         </div>
                                     </div>

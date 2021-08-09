@@ -2869,6 +2869,9 @@ h5 {
           flex-direction: column; }
   .discount-section span {
     margin-bottom: 2px; }
+  .discount-section p {
+    margin-top: 10px;
+    margin-bottom: 0; }
   .discount-section small {
     font-weight: normal;
     font-size: 14px;
